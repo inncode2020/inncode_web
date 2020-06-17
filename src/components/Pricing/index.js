@@ -1,5 +1,8 @@
 import React from "react";
 import _data from "../../data";
+import {Link} from "react-router-dom";
+
+
 
 export default class Pricing extends React.Component {
   constructor(props) {
@@ -89,8 +92,7 @@ export default class Pricing extends React.Component {
                               return <li key={feature}> {feature} </li>;
                             })}{" "}
                           </ul>{" "}
-                          <a
-                            href="/#"
+                          <Link to="/#"
                             className={
                               "btn mb-3 " +
                               (_package.isFeatured
@@ -100,7 +102,7 @@ export default class Pricing extends React.Component {
                             target="_blank"
                           >
                             Purchase now{" "}
-                          </a>{" "}
+                          </Link>{" "}
                         </div>{" "}
                       </div>{" "}
                     </div>
@@ -110,9 +112,9 @@ export default class Pricing extends React.Component {
               <div className="mt-5 text-center">
                 <p className="mb-2">
                   If you need custom services or Need more ?{" "}
-                  <a href="/#" className="color-secondary">
+                  <Link to="/#" className="color-secondary">
                     Contact us{" "}
-                  </a>{" "}
+                  </Link>{" "}
                 </p>{" "}
               </div>{" "}
               {!(this.props.hideFaq && this.props.hideFaq === true) &&

@@ -1,5 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
+import {Link} from "react-router-dom";
+
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -40,9 +42,9 @@ class HeroSection extends React.Component {
                     The page you are looking for might have been removed had its
                     name changed or is temporarily unavailable.{" "}
                   </p>{" "}
-                  <a className="btn app-store-btn" href="/">
+                  <Link to='/' className="btn app-store-btn">
                     Go to Homepage{" "}
-                  </a>{" "}
+                  </Link>{" "}
                 </div>{" "}
               </div>{" "}
             </div>{" "}

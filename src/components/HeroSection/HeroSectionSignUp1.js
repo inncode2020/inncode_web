@@ -1,6 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { signUp } from "../../actions/index";
+import {Link} from "react-router-dom";
+
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -194,7 +196,7 @@ class HeroSection extends React.Component {
                             htmlFor="ckbAgree"
                           >
                             I agree to the{" "}
-                            <a href="/#"> terms and conditions </a>{" "}
+                            <Link to="/#"> terms and conditions </Link>{" "}
                           </label>{" "}
                         </div>{" "}
                       </div>
@@ -212,9 +214,9 @@ class HeroSection extends React.Component {
                   </div>{" "}
                   <div className="card-footer px-md-5 bg-transparent border-top">
                     <small> Already have an account ? </small>{" "}
-                    <a href="login1" className="small">
+                    <Link to="login1" className="small">
                       Sign in
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}

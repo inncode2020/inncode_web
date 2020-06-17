@@ -1,5 +1,7 @@
 import React from "react";
 import _data from "../../data";
+import {Link} from "react-router-dom";
+
 
 class TeamMember extends React.Component {
   constructor(props) {
@@ -36,17 +38,17 @@ class TeamMember extends React.Component {
               <div className="col-md-12 col-sm-12 col-lg-6">
                 <div className="team-single-text">
                   <div className="team-name mb-4">
-                    <h4 className="mb-1"> Henry Ford </h4>{" "}
-                    <span> Managing Director </span>{" "}
+                    <h4 className="mb-1"> Aman Singh </h4>{" "}
+                    <span> WEB DEVELOPER </span>{" "}
                   </div>{" "}
                   <ul className="team-single-info">
                     <li>
                       <strong> Phone: </strong>{" "}
-                      <span> (+123) 123-456-789 </span>{" "}
+                      <span> (+91) 8210988275  </span>{" "}
                     </li>{" "}
                     <li>
                       <strong> Email: </strong>{" "}
-                      <span> yourname @domain.com </span>{" "}
+                      <span> aman15aditya@gmail.com </span>{" "}
                     </li>{" "}
                   </ul>{" "}
                   <div className="text-content mt-20">
@@ -68,24 +70,24 @@ class TeamMember extends React.Component {
                   </div>{" "}
                   <ul className="team-social-list list-inline mt-4">
                     <li className="list-inline-item">
-                      <a href="/#" className="color-primary">
-                        <span className="ti-facebook"> </span>{" "}
-                      </a>{" "}
+                      <Link to="/#" className="color-primary">
+                        <span className="ti-facebook" title="facebook"> </span>{" "}
+                      </Link>{" "}
                     </li>{" "}
                     <li className="list-inline-item">
-                      <a href="/#" className="color-primary">
-                        <span className="ti-instagram"> </span>{" "}
-                      </a>{" "}
+                      <Link to="/#" className="color-primary">
+                        <span className="ti-instagram" title="instagram"> </span>{" "}
+                      </Link>{" "}
                     </li>{" "}
                     <li className="list-inline-item">
-                      <a href="/#" className="color-primary">
+                      <Link to="/#" className="color-primary">
                         <span className="ti-dribbble"> </span>{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </li>{" "}
                     <li className="list-inline-item">
-                      <a href="/#" className="color-primary">
-                        <span className="ti-linkedin"> </span>{" "}
-                      </a>{" "}
+                      <Link to="/#" className="color-primary">
+                        <span className="ti-linkedin" title="linkedin"> </span>{" "}
+                      </Link>{" "}
                     </li>{" "}
                   </ul>{" "}
                 </div>{" "}
@@ -220,7 +222,7 @@ class TeamMember extends React.Component {
                       >
                         <span className="progress-line"> </span>{" "}
                       </span>{" "}
-                    </div>{" "}
+                    </div>{" "}                    
                   </div>{" "}
                 </div>{" "}
               </div>{" "}

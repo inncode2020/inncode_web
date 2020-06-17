@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 class Download extends React.Component {
   constructor(props) {
@@ -33,12 +35,12 @@ class Download extends React.Component {
                     disintermediate resource maximizing action.{" "}
                   </p>{" "}
                   <div className="download-btn mt-4">
-                    <a href="/#" className="btn solid-btn mr-3">
+                    <Link to="/#" className="btn solid-btn mr-3">
                       <span className="ti-android"> </span> Google Play{" "}
-                    </a>{" "}
-                    <a href="/#" className="btn outline-btn">
+                    </Link>{" "}
+                    <Link to="/#" className="btn outline-btn">
                       <span className="ti-apple"> </span> App Store{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}

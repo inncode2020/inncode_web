@@ -1,0 +1,32 @@
+{
+    "data" : [
+        {
+            "id":1,
+            "name": "Aman Singh",
+            "designation": "WEB DEVELOPER",
+            "teamImage" : "",
+            "introText"  : "" 
+        },
+        {
+            "id":2,
+            "name": "Shubham Singh",
+            "designation": "BACKEND DEVELOPER",
+            "teamImage" : "",
+            "introText"  : ""     
+        },
+        {
+            "id":3,
+            "name": "Aniket",
+            "designation": "GRAPHIC DESIGNER",
+            "teamImage" : "",
+            "introText"  : ""     
+        },
+        {
+            "id":4,
+            "name": "Asif Hussain",
+            "designation": "BUSSINESS ANALYST",
+            "teamImage" : "",
+            "introText"  : ""     
+        }
+    ]
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
+import {Link} from "react-router-dom";
+
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -37,9 +39,9 @@ class HeroSection extends React.Component {
                     based applications.Proactively facilitate professional human
                     capital for cutting-edge.
                   </p>
-                  <a href="#download" className="btn app-store-btn">
+                  <Link to="#download" className="btn app-store-btn">
                     Download Now
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-6 col-lg-5">

@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import {Link} from "react-router-dom";
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -42,12 +43,11 @@ class HeroSection extends React.Component {
                         We offer Digital Marketing / SEO in Kalawad Road Rajkot,
                         Gujarat.Find here details about our company.
                       </p>
-                      <a
-                        href="#contact"
+                      <Link to="#contact"
                         className="btn google-play-btn page-scroll"
                       >
                         Contact with us
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

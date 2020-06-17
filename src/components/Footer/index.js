@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 class Footer extends React.Component {
   constructor(props) {
@@ -39,24 +41,24 @@ class Footer extends React.Component {
                     <div className="social-list-wrap">
                       <ul className="social-list list-inline list-unstyled">
                         <li className="list-inline-item">
-                          <a href="/#" target="_blank" title="Facebook">
+                          <Link to="/#" target="_blank" title="Facebook">
                             <span className="ti-facebook"> </span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="list-inline-item">
-                          <a href="/#" target="_blank" title="Twitter">
+                          <Link to="/#" target="_blank" title="Twitter">
                             <span className="ti-twitter"> </span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="list-inline-item">
-                          <a href="/#" target="_blank" title="Instagram">
+                          <Link to="/#" target="_blank" title="Instagram">
                             <span className="ti-instagram"> </span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="list-inline-item">
-                          <a href="/#" target="_blank" title="printerst">
+                          <Link to="/#" target="_blank" title="printerst">
                             <span className="ti-pinterest"> </span>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -67,19 +69,19 @@ class Footer extends React.Component {
                     <h5 className="mb-3 text-web-primary"> Others Links </h5>
                     <ul className="list-unstyled">
                       <li className="mb-2">
-                        <a href="/team"> About Us </a>
+                        <Link to="/team"> About Us </Link>
                       </li>
                       <li className="mb-2">
-                        <a href="/review"> Contact Us </a>
+                        <Link to="/review"> Contact Us </Link>
                       </li>
                       <li className="mb-2">
-                        <a href="/comingSoon"> Pricing </a>
+                        <Link to="/comingSoon"> Pricing </Link>
                       </li>
                       <li className="mb-2">
-                        <a href="/comingSoon"> Privacy Policy </a>
+                        <Link to="/comingSoon"> Privacy Policy </Link>
                       </li>
                       <li className="mb-2">
-                        <a href="/comingSoon"> Terms and Conditions </a>
+                        <Link to="/comingSoon"> Terms and Conditions </Link>
                       </li>
                     </ul>
                   </div>
@@ -96,17 +98,17 @@ class Footer extends React.Component {
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-mobile mr-2"> </span>
-                        <a href="tel:+61283766284"> +91 8210988275 </a>
+                        <Link to="tel:+61283766284"> +91 8210988275 </Link>
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-email mr-2"> </span>
-                        <a href="mailto:mail@example.com">
+                        <Link to="mailto:mail@example.com">
                           support@inncodesolutions.com
-                        </a>
+                        </Link>
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-world mr-2"> </span>
-                        <a href="/#"> www.inncodesolutions.com </a>
+                        <Link to="/#"> www.inncodesolutions.com </Link>
                       </li>
                     </ul>
                   </div>
@@ -130,7 +132,7 @@ class Footer extends React.Component {
                 <div className="col-md-6 col-lg-5">
                   <p className="copyright-text pb-0 mb-0">
                     Copyrights© 2020. All rights reserved by
-                    <a href="/#"> Inncode </a>
+                    <Link to="/#"> Inncode </Link>
                   </p>
                 </div>
               </div>

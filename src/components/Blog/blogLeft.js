@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { search } from "../../actions/index";
+import {Link} from "react-router-dom";
+
+
 
 class Blog extends Component {
   constructor(props) {
@@ -86,29 +89,29 @@ class Blog extends Component {
                     </div>{" "}
                     <ul>
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Journey <span className="float-right"> 112 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Development <span className="float-right"> 86 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Sport <span className="float-right"> 10 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Photography <span className="float-right"> 144 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Symphony <span className="float-right"> 18 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                     </ul>{" "}
                   </aside>
@@ -119,55 +122,55 @@ class Blog extends Component {
                     <ul>
                       <li className="clearfix">
                         <div className="wi">
-                          <a href="/#">
+                          <Link to="/#">
                             <img
                               src="img/blog/1.jpg"
                               alt="recent post"
                               className="img-fluid rounded"
                             />
-                          </a>{" "}
+                          </Link>{" "}
                         </div>{" "}
                         <div className="wb">
-                          <a href="/#">
+                          <Link to="/#">
                             Map where your photos were taken and discover local
                             points.{" "}
-                          </a>{" "}
+                          </Link>{" "}
                           <span className="post-date"> May 8, 2016 </span>{" "}
                         </div>{" "}
                       </li>{" "}
                       <li className="clearfix">
                         <div className="wi">
-                          <a href="/#">
+                          <Link to="/#">
                             <img
                               src="img/blog/2.jpg"
                               alt="recent post"
                               className="img-fluid rounded"
                             />
-                          </a>{" "}
+                          </Link>{" "}
                         </div>{" "}
                         <div className="wb">
-                          <a href="/#">
+                          <Link to="/#">
                             Map where your photos were taken and discover local
                             points.{" "}
-                          </a>{" "}
+                          </Link>{" "}
                           <span className="post-date"> May 8, 2016 </span>{" "}
                         </div>{" "}
                       </li>{" "}
                       <li className="clearfix">
                         <div className="wi">
-                          <a href="/#">
+                          <Link to="/#">
                             <img
                               src="img/blog/3.jpg"
                               alt="recent post"
                               className="img-fluid rounded"
                             />
-                          </a>{" "}
+                          </Link>{" "}
                         </div>{" "}
                         <div className="wb">
-                          <a href="/#">
+                          <Link to="/#">
                             Map where your photos were taken and discover local
                             points.{" "}
-                          </a>{" "}
+                          </Link>{" "}
                           <span className="post-date"> May 8, 2016 </span>{" "}
                         </div>{" "}
                       </li>{" "}
@@ -206,9 +209,9 @@ class Blog extends Component {
                       <h6> Tags </h6>{" "}
                     </div>{" "}
                     <div className="tag-cloud">
-                      <a href="/#"> e-commerce </a> <a href="/#"> portfolio </a>{" "}
-                      <a href="/#"> responsive </a> <a href="/#"> bootstrap </a>{" "}
-                      <a href="/#"> business </a> <a href="/#"> corporate </a>{" "}
+                      <Link to="/#"> e-commerce </Link> <Link to="/#"> portfolio </Link>{" "}
+                      <Link to="/#"> responsive </Link> <Link to="/#"> bootstrap </Link>{" "}
+                      <Link to="/#"> business </Link> <Link to="/#"> corporate </Link>{" "}
                     </div>{" "}
                   </aside>{" "}
                 </div>{" "}
@@ -216,30 +219,29 @@ class Blog extends Component {
               <div className="col-lg-8 col-md-8">
                 <article className="post">
                   <div className="post-preview">
-                    <a href="/#">
+                    <Link to="/#">
                       <img src="img/blog/2-w.jpg" alt="blog" />
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                   <div className="post-wrapper">
                     <div className="post-header">
                       <h2 className="post-title">
-                        <a href="blogRight">
+                        <Link to="blogRight">
                           Objectively communicate business core competencies{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </h2>{" "}
                       <ul className="post-meta">
                         <li> November 18, 2016 </li>{" "}
                         <li>
-                          <a href="/#"> Branding </a>,{" "}
-                          <a
-                            href="/#
+                          <Link to="/#"> Branding </Link>,{" "}
+                          <Link to="/#
             "
                           >
                             Design
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li>
-                          <a href="/#"> 3 Comments </a>{" "}
+                          <Link to="/#"> 3 Comments </Link>{" "}
                         </li>{" "}
                       </ul>{" "}
                     </div>{" "}
@@ -255,38 +257,37 @@ class Blog extends Component {
                       </p>{" "}
                     </div>{" "}
                     <div className="post-more pt-4 align-items-center d-flex">
-                      <a href="/#" className="btn solid-btn">
+                      <Link to="/#" className="btn solid-btn">
                         Read more <span className="ti-arrow-right"> </span>{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </div>{" "}
                   </div>{" "}
                 </article>{" "}
                 <article className="post">
                   <div className="post-preview">
-                    <a href="/#">
+                    <Link to="/#">
                       <img src="img/blog/3-w.jpg" alt="blog" />
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                   <div className="post-wrapper">
                     <div className="post-header">
                       <h2 className="post-title">
-                        <a href="blogRight">
+                        <Link to="blogRight">
                           Objectively communicate business core competencies{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </h2>{" "}
                       <ul className="post-meta">
                         <li> November 18, 2016 </li>{" "}
                         <li>
-                          <a href="/#"> Branding </a>,{" "}
-                          <a
-                            href="/#
+                          <Link to="/#"> Branding </Link>,{" "}
+                          <Link to="/#
             "
                           >
                             Design
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li>
-                          <a href="/#"> 3 Comments </a>{" "}
+                          <Link to="/#"> 3 Comments </Link>{" "}
                         </li>{" "}
                       </ul>{" "}
                     </div>{" "}
@@ -302,38 +303,37 @@ class Blog extends Component {
                       </p>{" "}
                     </div>{" "}
                     <div className="post-more pt-4 align-items-center d-flex">
-                      <a href="/#" className="btn solid-btn">
+                      <Link to="/#" className="btn solid-btn">
                         Read more <span className="ti-arrow-right"> </span>{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </div>{" "}
                   </div>{" "}
                 </article>{" "}
                 <article className="post">
                   <div className="post-preview">
-                    <a href="/#">
+                    <Link to="/#">
                       <img src="img/blog/4-w.jpg" alt="blog" />
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                   <div className="post-wrapper">
                     <div className="post-header">
                       <h2 className="post-title">
-                        <a href="blogRight">
+                        <Link to="blogRight">
                           Objectively communicate business core competencies{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </h2>{" "}
                       <ul className="post-meta">
                         <li> November 18, 2016 </li>{" "}
                         <li>
-                          <a href="/#"> Branding </a>,{" "}
-                          <a
-                            href="/#
+                          <Link to="/#"> Branding </Link>,{" "}
+                          <Link to="/#
             "
                           >
                             Design
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li>
-                          <a href="/#"> 3 Comments </a>{" "}
+                          <Link to="/#"> 3 Comments </Link>{" "}
                         </li>{" "}
                       </ul>{" "}
                     </div>{" "}
@@ -349,9 +349,9 @@ class Blog extends Component {
                       </p>{" "}
                     </div>{" "}
                     <div className="post-more pt-4 align-items-center d-flex">
-                      <a href="/#" className="btn solid-btn">
+                      <Link to="/#" className="btn solid-btn">
                         Read more <span className="ti-arrow-right"> </span>{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </div>{" "}
                   </div>{" "}
                 </article>{" "}
@@ -360,34 +360,34 @@ class Blog extends Component {
                     <nav className="custom-pagination-nav">
                       <ul className="pagination justify-content-center">
                         <li className="page-item">
-                          <a className="page-link" href="/#">
+                          <Link to="/#" className="page-link" >
                             <span className="ti-angle-left"> </span>{" "}
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li className="page-item active">
-                          <a className="page-link" href="/#">
+                          <Link to ="/#" className="page-link" >
                             1{" "}
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li className="page-item">
-                          <a className="page-link" href="/#">
+                          <Link to="/#" className="page-link" >
                             2{" "}
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li className="page-item">
-                          <a className="page-link" href="/#">
+                          <Link to ="/#" className="page-link" >
                             3{" "}
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li className="page-item">
-                          <a className="page-link" href="/#">
+                          <Link to="/#" className="page-link" >
                             4{" "}
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li className="page-item">
-                          <a className="page-link" href="/#">
+                          <Link to="/#" className="page-link" >
                             <span className="ti-angle-right"> </span>{" "}
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                       </ul>{" "}
                     </nav>{" "}

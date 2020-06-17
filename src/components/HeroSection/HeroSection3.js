@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-
+import {Link} from "react-router-dom";
 class HeroSection extends React.Component {
   constructor(props) {
     super(props);
@@ -38,9 +38,9 @@ class HeroSection extends React.Component {
                     vortals.Uniquely enable inexpensive materials rather than
                     sticky products.
                   </p>
-                  <a href="#contact" className="btn solid-btn page-scroll">
+                  <Link to="#contact" className="btn solid-btn page-scroll">
                     Contact with us
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-6 col-lg-5">
