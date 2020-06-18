@@ -1,6 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 class Footer extends React.Component {
   constructor(props) {
@@ -105,9 +104,9 @@ class Footer extends React.Component {
                         <a href="mailto:mail@example.com">
                           hello.inncodesolutions@gmail.com
                         </a>
-                        <Link to="mailto:mail@example.com">
+                        {/* <Link to="mailto:mail@example.com">
                           support@inncodesolutions.com
-                        </Link>
+                        </Link> */}
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-world mr-2"> </span>
