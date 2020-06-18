@@ -112,6 +112,7 @@ export default class Pricing extends React.Component {
               <div className="mt-5 text-center">
                 <p className="mb-2">
                   If you need custom services or Need more ?{" "}
+                  <a className="color-secondary">Contact us </a>{" "}
                   <Link to="/#" className="color-secondary">
                     Contact us{" "}
                   </Link>{" "}

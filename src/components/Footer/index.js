@@ -91,9 +91,9 @@ class Footer extends React.Component {
                     <ul className="list-unstyled support-list">
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-location-pin mr-2"> </span>
-                        Telco
+                        Sector 55, Sushant Lok Block 2, Gurgaon, Haryana,
                         <br />
-                        831004
+                        India - 122011
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-mobile mr-2"> </span>
@@ -101,9 +101,12 @@ class Footer extends React.Component {
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-email mr-2"> </span>
-                        <Link to="mailto:mail@example.com">
+                        <a href="mailto:mail@example.com">
+                          hello.inncodesolutions@gmail.com
+                        </a>
+                        {/* <Link to="mailto:mail@example.com">
                           support@inncodesolutions.com
-                        </Link>
+                        </Link> */}
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-world mr-2"> </span>
