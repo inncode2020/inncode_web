@@ -17,7 +17,7 @@ class Header extends React.Component {
             }
           >
             <div className="container">
-              <Link to ="/" className="navbar-brand" >
+              <Link to="/" className="navbar-brand">
                 <img
                   src="img/logo-white-1x.png"
                   width="120"
@@ -80,24 +80,24 @@ class Header extends React.Component {
 
                   <li className="nav-item">
                     <Link className="nav-link page-scroll" to="/about">
-                      About
+                      About Us
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link className="nav-link page-scroll" to="/features">
                       Features
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <Link className="nav-link page-scroll" to="/pricing">
                       Pricing
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link className="nav-link page-scroll" to="/portfolio">
                       Screenshots
                     </Link>
-                  </li>
+                  </li> */}
                   {/* <li className="nav-item dropdown">
                     <a
                       className="nav-link page-scroll dropdown-toggle"
@@ -191,7 +191,7 @@ class Header extends React.Component {
                       </Link>
                     </div>
                   </li> */}
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link
                       className="dropdown-item"
                       to="/blogLeft"
@@ -199,7 +199,7 @@ class Header extends React.Component {
                     >
                       Blog
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <Link className="nav-link page-scroll" to="/team">
                       Team
@@ -207,7 +207,7 @@ class Header extends React.Component {
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link page-scroll" to="/contact">
-                      Contact
+                      Contact Us
                     </Link>
                   </li>
                 </ul>
@@ -220,4 +220,4 @@ class Header extends React.Component {
   }
 }
 
-export default connect(state => ({}))(Header);
+export default connect((state) => ({}))(Header);
