@@ -85,7 +85,7 @@ class Testimonial extends Component {
                                 <img
                                   src={comment.image}
                                   alt="client"
-                                  className="img-fluid rounded-circle"
+                                  className="img-fluid rounded-circle img-testimonials"
                                 />
                               </div>{" "}
                               <div className="media-body">

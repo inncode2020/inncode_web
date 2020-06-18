@@ -2661,6 +2661,8 @@ blockquote:before {
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+.team-list-image{
   width: 350px;
   height: 459px;
 }
@@ -3537,4 +3539,8 @@ button,
   background: #202877;
   color: #fff;
   opacity: 1;
+}
+
+.img-testimonials{
+  height: 64px;
 }

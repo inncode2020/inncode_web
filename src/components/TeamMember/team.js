@@ -41,7 +41,7 @@ class TeamMember extends React.Component {
               {Team.data.map((item, index) => (
                 <div className="col-lg-4 col-md-6 col-sm-6">
                   <div className="single-team-member position-relative my-lg-3 my-md-3 my-sm-0">
-                    <div className="team-image">
+                    <div className="team-image team-list-image">
                       <img
                         src={`img/team-${index + 1}.jpeg`}
                         alt="Team Members"
