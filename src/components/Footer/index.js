@@ -76,6 +76,9 @@ class Footer extends React.Component {
                       <li className="mb-2">
                         <Link to="/comingSoon"> Pricing </Link>
                       </li>
+                      <li className="mb-2">
+                        <Link to="/Terms"> Terms & Conditions </Link>
+                      </li>
                       {/* <li className="mb-2">
                         <Link to="/comingSoon"> Privacy Policy </Link>
                       </li> */}

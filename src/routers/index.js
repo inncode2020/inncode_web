@@ -28,6 +28,7 @@ import BlogLeft from "../themes/blogLeft";
 import BlogRight from "../themes/blogRight";
 import Pricing from "../components/Pricing";
 import Contact from "../components/Contact";
+import Terms from "../themes/terms";
 
 export default class Routes extends React.PureComponent {
   render() {
@@ -61,6 +62,7 @@ export default class Routes extends React.PureComponent {
             <Route exact path="/blogRight" component={BlogRight} /> */}
             <Route exact path="/pricing" component={Faq} />
             <Route exact path="/contact" component={Review} />
+            <Route exact path="/terms" component={Terms} />
             <Route path="*" component={NotFound} />
           </Switch>
         </Router>
