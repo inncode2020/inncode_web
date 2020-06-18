@@ -1,13 +1,12 @@
 import React from "react";
 import _data from "../../data";
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 class TeamMember extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      teamMember: {}
+      teamMember: {},
     };
   }
 
@@ -16,7 +15,7 @@ class TeamMember extends React.Component {
      * Your ajax will goes here to get data then call setState
      */
     this.setState({
-      teamMember: _data.teamMember
+      teamMember: _data.teamMember,
     });
   }
 

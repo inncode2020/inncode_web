@@ -1,6 +1,6 @@
 import React from "react";
-import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -30,17 +30,17 @@ class HeroSection extends React.Component {
             <div className="row align-items-center justify-content-center">
               <div className="col-md-9 col-lg-7">
                 <div className="page-header-content text-web-primary text-center pt-sm-5 pt-md-5 pt-lg-0">
-                  <h1 className="text-web-primary mb-0"> Our Team </h1>
+                  <h1 className="text-web-primary mb-0">
+                    {" "}
+                    Terms & Conditions{" "}
+                  </h1>
                   <div className="custom-breadcrumb">
                     <ol className="breadcrumb d-inline-block bg-transparent list-inline py-0">
                       <li className="list-inline-item breadcrumb-item">
                         <Link to="/"> Home </Link>
                       </li>
-                      <li className="list-inline-item breadcrumb-item">
-                        <Link to="/#"> Pages </Link>
-                      </li>
                       <li className="list-inline-item breadcrumb-item active">
-                        Our Team
+                        Terms
                       </li>
                     </ol>
                   </div>
