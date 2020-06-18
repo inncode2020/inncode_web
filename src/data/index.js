@@ -8,7 +8,7 @@ module.exports = {
   promo: {
     title: "Affordable Web Design for Small Business?",
     description:
-      "Small businesses are the heart of E-market. We at Inncode understands perfectly the digital challenges smaller companies face on the internet. The level of digital marketing competition  in 2020 is tough. What works for bigger brands will not work for ones with smaller budgets. We get it because we are a small company ourselves. When it comes to digital marketing, ROI is everything. Our goal is simple. Create a powerful and successful digital strategy and deliver powerful results at reasonable pricing. Inncode Solution understands web development for small business.",
+      "Small businesses are the heart of E-market and we being in the market from past 3 years have understood the digital challenges which many of the companies face in establishing a great communication thread with their customer through internet. The competition of digital marketing is setting its own benchmark every year.What works for bigger brands will not work for ones with smaller budgets. When it comes to digital marketing, ROI is everything. Our goal is simple, create a powerful and successful digital strategy and deliver powerful results at reasonable pricing. We at Inncode Solutions understands the roots and branches of  web development and can prove ourselves to be a profitable asset.",
     items: [
       {
         title: "MOBILE DEVELOPMENT",
@@ -130,7 +130,7 @@ module.exports = {
         company: "Gurukwool",
         image: "img/Client-3.jpg",
         comment:
-          "I am very pleased with the project you have done, and especially your commitment to providing a quality solution when it meant going the extra mile to do so.",
+          "I am very pleased with the project done by InncodeSolutions, and especially their commitment for providing a quality solution when it meant going the extra mile to do so.",
       },
       {
         name: "Sumit Singh",
