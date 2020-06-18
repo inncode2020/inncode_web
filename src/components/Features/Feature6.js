@@ -47,8 +47,9 @@ class Feature extends React.Component {
                       <div className="icon-text">
                         <h5> Responsive web design </h5>{" "}
                         <p className="mb-0">
-                          Modular and interchangable componente between layouts
-                          and even demos.{" "}
+                          We believe that Design is intelligence made visible,
+                          which helps to create a responsive website leads to a
+                          better user experience.{" "}
                         </p>{" "}
                       </div>{" "}
                     </div>{" "}
@@ -75,8 +76,8 @@ class Feature extends React.Component {
                       <div className="icon-text">
                         <h5> Friendly online support </h5>{" "}
                         <p className="mb-0">
-                          Modular and interchangable componente between layouts
-                          and even demos.{" "}
+                          We don't want to push our ideas on to customers, we
+                          simply want to make what they want{" "}
                         </p>{" "}
                       </div>{" "}
                     </div>{" "}
