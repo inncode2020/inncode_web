@@ -1,32 +1,52 @@
 {
-    "data" : [
-        {
-            "id":1,
-            "name": "Aman Singh",
-            "designation": "WEB DEVELOPER",
-            "teamImage" : "",
-            "introText"  : "" 
-        },
-        {
-            "id":2,
-            "name": "Shubham Singh",
-            "designation": "BACKEND DEVELOPER",
-            "teamImage" : "",
-            "introText"  : ""     
-        },
-        {
-            "id":3,
-            "name": "Aniket",
-            "designation": "GRAPHIC DESIGNER",
-            "teamImage" : "",
-            "introText"  : ""     
-        },
-        {
-            "id":4,
-            "name": "Asif Hussain",
-            "designation": "BUSSINESS ANALYST",
-            "teamImage" : "",
-            "introText"  : ""     
-        }
-    ]
+  "data": [
+    {
+      "id": 1,
+      "name": "Aman Singh",
+      "designation": "WEB DEVELOPER",
+      "introText": "Aman got started with web development by making sites with React, and eventually tricked himself into doing JavaScript.",
+      "introText2": "Eventually, he realized that he enjoys working on open source.",
+      "introText3": "He also takes care of the cutest dogs in the world.",
+      "phone": "Phone:",
+      "phoneValue": "(+91) 8210988275",
+      "email": "Email:",
+      "emailValue": "aman15aditya@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Shubham Singh",
+      "designation": "BACKEND DEVELOPER",
+      "introText": "Shubham learned programming because he thought it meant creating video games.",
+      "introText2": "Instead, he ended up working on the single page app, and now on React itself.",
+      "introText3": "Shubham doesn’t want to make video games anymore, but he plans to create backend if he ever gets bored.",
+      "phone": "Phone:",
+      "phoneValue": "(+91) 7979070712",
+      "email": "Email:",
+      "emailValue": "shubham.inncoder@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Aniket",
+      "designation": "GRAPHIC DESIGNER",
+      "introText": "Graphic design is a big talent pool filled with talented designers",
+      "introText2": "Aniket believe in the power of elegant minimalism in a world increasingly saturated with garish colour.",
+      "introText3": "He is turning the important (but dull) information in annual reports into vibrant, exciting works of visionary thought leadership that excites directors and investors alike.",
+      "phone": "Phone:",
+      "phoneValue": "(+91) 9660426119",
+      "email": "Email:",
+      "emailValue": "aniket.inncode@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Asif Hussain",
+      "designation": "BUSSINESS ANALYST",
+      "introText": "Asif is interested in travelling, drum and bass, stand-up comedy and spending time with the family.",
+      "introText2": "He most enjoys hacking on new unexplored ideas around UIs and accessibility",
+      "introText3": "Asif has a passion for tweaking and optimizing code to get the most performance out of things.",
+      "phone": "Phone:",
+      "phoneValue": "(+91) 9031183972",
+      "email": "Email:",
+      "emailValue": "asif.inncoder@gmail.com"
+    }
+  ]
 }

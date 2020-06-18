@@ -1,6 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 class Footer extends React.Component {
   constructor(props) {
@@ -77,12 +76,12 @@ class Footer extends React.Component {
                       <li className="mb-2">
                         <Link to="/comingSoon"> Pricing </Link>
                       </li>
-                      <li className="mb-2">
+                      {/* <li className="mb-2">
                         <Link to="/comingSoon"> Privacy Policy </Link>
-                      </li>
-                      <li className="mb-2">
+                      </li> */}
+                      {/* <li className="mb-2">
                         <Link to="/comingSoon"> Terms and Conditions </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
