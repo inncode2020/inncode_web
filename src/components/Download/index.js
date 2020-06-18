@@ -1,4 +1,7 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
+
 
 class Download extends React.Component {
   constructor(props) {
@@ -38,12 +41,12 @@ class Download extends React.Component {
                     change.Collaboratively.{" "}
                   </p>
                   <div className="download-btn">
-                    <a href="/#" className="btn google-play-btn mr-3">
+                    <Link to="/#" className="btn google-play-btn mr-3">
                       <span className="ti-android"> </span> Google Play{" "}
-                    </a>{" "}
-                    <a href="/#" className="btn app-store-btn">
+                    </Link>{" "}
+                    <Link to="/#" className="btn app-store-btn">
                       <span className="ti-apple"> </span> App Store{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}

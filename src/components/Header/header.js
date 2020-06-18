@@ -17,14 +17,14 @@ class Header extends React.Component {
             }
           >
             <div className="container">
-              <a className="navbar-brand" href="/">
+              <Link to ="/" className="navbar-brand" >
                 <img
                   src="img/logo-white-1x.png"
                   width="120"
                   alt="logo"
                   className="img-fluid"
                 />
-              </a>
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -52,29 +52,29 @@ class Header extends React.Component {
                       aria-expanded="false"
                     >
                       Home
-                    </a>
+                    </Link>
                     <div
                       className="dropdown-menu submenu"
                       aria-labelledby="navbarDropdownHome"
                     >
                       <a className="dropdown-item" href="/theme1">
                         Demo Template 1
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="/theme2">
                         Demo Template 2
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="/theme3">
                         Demo Template 3
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="/theme4">
                         Demo Template 4
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="/theme5">
                         Demo Template 5
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="/theme6">
                         Demo Template 6
-                      </a>
+                      </Link>
                     </div>
                   </li> */}
 
@@ -112,53 +112,53 @@ class Header extends React.Component {
                       <span className="custom-nav-badge badge badge-danger badge-pill">
                         New
                       </span>
-                    </a>
+                    </Link>
                     <div
                       className="dropdown-menu submenu"
                       aria-labelledby="navbarDropdownPage"
                     >
                       <a className="dropdown-item" href="login1">
                         Login Page 1
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="login2">
                         Login Page 2
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="signup1">
                         Signup Page 1
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="signup2">
                         Signup Page 2
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="resetPassword">
                         Password Reset
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="changePassword">
                         Change Password
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="download">
                         Download Page
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="review">
                         Review Page
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="faq">
                         FAQ Page
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="404">
                         404 Page
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="comingSoon">
                         Coming Soon
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="thankyou">
                         Thank You
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="team">
                         Team Page
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="singleTeam">
                         Team Single
-                      </a>
+                      </Link>
                     </div>
                 </li> */}
                   {/* <li className="nav-item dropdown">
@@ -175,20 +175,20 @@ class Header extends React.Component {
                       <span className="custom-nav-badge badge badge-danger badge-pill">
                         New
                       </span>
-                    </a>
+                    </Link>
                     <div
                       className="dropdown-menu submenu"
                       aria-labelledby="navbarBlogPage"
                     >
                       <a className="dropdown-item" href="blog">
                         Blog Grid
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="blogLeft">
                         Blog Left Sidebar
-                      </a>
+                      </Link>
                       <a className="dropdown-item" href="blogRight">
                         Details Right Sidebar
-                      </a>
+                      </Link>
                     </div>
                   </li> */}
                   <li className="nav-item">

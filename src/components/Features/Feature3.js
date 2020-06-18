@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 class Feature extends React.Component {
   constructor(props) {
@@ -42,44 +44,44 @@ class Feature extends React.Component {
                   <div className="feature-content-wrap">
                     <ul className="nav nav-tabs feature-tab" data-tabs="tabs">
                       <li className="nav-item">
-                        <a
+                        <Link to ="#tab6-1"
                           className="nav-link active h6"
-                          href="#tab6-1"
+                          
                           data-toggle="tab"
                         >
                           <span className="ti-palette"> </span>
                           Design{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li className="nav-item">
-                        <a
+                        <Link to ="#tab6-2"
                           className="nav-link h6"
-                          href="#tab6-2"
+                          
                           data-toggle="tab"
                         >
                           <span className="ti-vector"> </span>
                           Development{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li className="nav-item">
-                        <a
+                        <Link to ="#tab6-3"
                           className="nav-link h6"
-                          href="#tab6-3"
+                          
                           data-toggle="tab"
                         >
                           <span className="ti-bar-chart"> </span>
                           Marketing{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li className="nav-item">
-                        <a
+                        <Link to ="#tab6-4"
                           className="nav-link h6"
-                          href="#tab6-4"
+                          
                           data-toggle="tab"
                         >
                           <span className="ti-announcement"> </span>
                           Branding{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                     </ul>{" "}
                     <div className="tab-content feature-tab-content">

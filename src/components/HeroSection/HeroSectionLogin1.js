@@ -1,6 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { login } from "../../actions/index";
+import {Link} from "react-router-dom";
+
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -140,12 +142,11 @@ class HeroSection extends React.Component {
                             <label className="pb-1"> Password </label>{" "}
                           </div>{" "}
                           <div className="col-auto">
-                            <a
-                              href="password-reset.html"
+                            <Link to="password-reset.html"
                               className="form-text small text-muted"
                             >
                               Forgot password ?
-                            </a>{" "}
+                            </Link>{" "}
                           </div>{" "}
                         </div>{" "}
                         <div className="input-group input-group-merge">
@@ -179,10 +180,10 @@ class HeroSection extends React.Component {
                   </div>{" "}
                   <div className="card-footer bg-transparent border-top px-md-5">
                     <small> Not registered ? </small>{" "}
-                    <a href="signup1" className="small">
+                    <Link to="signup1" className="small">
                       {" "}
                       Create account{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}

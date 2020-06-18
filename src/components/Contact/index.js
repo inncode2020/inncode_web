@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { submitContact } from "../../actions/index";
 import _data from "../../data";
+import {Link} from "react-router-dom";
+
+
 
 class Contact extends Component {
   constructor(props) {
@@ -131,10 +134,10 @@ class Contact extends Component {
                     <li>
                       <span>
                         Email:{" "}
-                        <a href="mailto:hello@yourdomain.com">
+                        <Link to="mailto:hello@yourdomain.com">
                           {" "}
                           {this.state.contact.email}{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </span>{" "}
                     </li>{" "}
                   </ul>{" "}

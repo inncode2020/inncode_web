@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom"; 
+
 
 class Blog extends Component {
   constructor(props) {
@@ -53,15 +55,15 @@ class Blog extends Component {
                       </ul>{" "}
                     </div>{" "}
                     <h3 className="h5 card-title">
-                      <a href="/#"> Appropriately productize fully </a>{" "}
+                      <Link to="/#"> Appropriately productize fully </Link>{" "}
                     </h3>{" "}
                     <p className="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk.{" "}
                     </p>{" "}
-                    <a href="/#" className="detail-link">
+                    <Link to="/#" className="detail-link">
                       Read more <span className="ti-arrow-right"> </span>{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -88,15 +90,15 @@ class Blog extends Component {
                       </ul>{" "}
                     </div>{" "}
                     <h3 className="h5 card-title">
-                      <a href="/#"> Quickly formulate backend </a>{" "}
+                      <Link to="/#"> Quickly formulate backend </Link>{" "}
                     </h3>{" "}
                     <p className="card-text">
                       Synergistically engage effective ROI after customer
                       directed partnerships.{" "}
                     </p>{" "}
-                    <a href="/#" className="detail-link">
+                    <Link to="/#" className="detail-link">
                       Read more <span className="ti-arrow-right"> </span>{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -123,15 +125,15 @@ class Blog extends Component {
                       </ul>{" "}
                     </div>{" "}
                     <h3 className="h5 card-title">
-                      <a href="/#"> Objectively extend extensive </a>{" "}
+                      <Link to="/#"> Objectively extend extensive </Link>{" "}
                     </h3>{" "}
                     <p className="card-text">
                       Holisticly mesh open-source leadership rather than
                       proactive users.{" "}
                     </p>{" "}
-                    <a href="/#" className="detail-link">
+                    <Link to="/#" className="detail-link">
                       Read more <span className="ti-arrow-right"> </span>{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -158,15 +160,15 @@ class Blog extends Component {
                       </ul>{" "}
                     </div>{" "}
                     <h3 className="h5 card-title">
-                      <a href="/#"> Appropriately re-engineer high </a>{" "}
+                      <Link to="/#"> Appropriately re-engineer high </Link>{" "}
                     </h3>{" "}
                     <p className="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk.{" "}
                     </p>{" "}
-                    <a href="/#" className="detail-link">
+                    <Link to="/#" className="detail-link">
                       Read more <span className="ti-arrow-right"> </span>{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -193,15 +195,15 @@ class Blog extends Component {
                       </ul>{" "}
                     </div>{" "}
                     <h3 className="h5 card-title">
-                      <a href="/#"> Progressively visualize enabled </a>{" "}
+                      <Link to="/#"> Progressively visualize enabled </Link>{" "}
                     </h3>{" "}
                     <p className="card-text">
                       Synergistically engage effective ROI after customer
                       directed partnerships.{" "}
                     </p>{" "}
-                    <a href="/#" className="detail-link">
+                    <Link to="/#" className="detail-link">
                       Read more <span className="ti-arrow-right"> </span>{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -228,15 +230,15 @@ class Blog extends Component {
                       </ul>{" "}
                     </div>{" "}
                     <h3 className="h5 card-title">
-                      <a href="/#"> Credibly implement maximizing </a>{" "}
+                      <Link to="/#"> Credibly implement maximizing </Link>{" "}
                     </h3>{" "}
                     <p className="card-text">
                       Holisticly mesh open-source leadership rather than
                       proactive users.{" "}
                     </p>{" "}
-                    <a href="/#" className="detail-link">
+                    <Link to="/#" className="detail-link">
                       Read more <span className="ti-arrow-right"> </span>{" "}
-                    </a>{" "}
+                    </Link>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -246,34 +248,34 @@ class Blog extends Component {
                 <nav className="custom-pagination-nav mt-4">
                   <ul className="pagination justify-content-center">
                     <li className="page-item">
-                      <a className="page-link" href="/#">
+                      <Link to ="/#" className="page-link" >
                         <span className="ti-angle-left"> </span>{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </li>{" "}
                     <li className="page-item active">
-                      <a className="page-link" href="/#">
+                      <Link to ="/#" className="page-link" >
                         1{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </li>{" "}
                     <li className="page-item">
-                      <a className="page-link" href="/#">
+                      <Link to ="/#" className="page-link" >
                         2{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </li>{" "}
                     <li className="page-item">
-                      <a className="page-link" href="/#">
+                      <Link to ="/#" className="page-link" >
                         3{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </li>{" "}
                     <li className="page-item">
-                      <a className="page-link" href="/#">
+                      <Link to ="/#" className="page-link" >
                         4{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </li>{" "}
                     <li className="page-item">
-                      <a className="page-link" href="/#">
+                      <Link to="/#" className="page-link" >
                         <span className="ti-angle-right"> </span>{" "}
-                      </a>{" "}
+                      </Link>{" "}
                     </li>{" "}
                   </ul>{" "}
                 </nav>{" "}

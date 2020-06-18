@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { search, comment } from "../../actions/index";
+import { Link } from "react-router-dom";
 
 class Blog extends Component {
   constructor(props) {
@@ -131,16 +132,13 @@ class Blog extends Component {
                       <ul className="post-meta">
                         <li> November 18, 2016 </li>{" "}
                         <li>
-                          In <a href="/#"> Branding </a>,{" "}
-                          <a
-                            href="/#
-            "
-                          >
+                          In <Link to="/#"> Branding </Link>,{" "}
+                          <Link to="/#">
                             Design
-                          </a>{" "}
+                          </Link>{" "}
                         </li>{" "}
                         <li>
-                          <a href="/#"> 3 Comments </a>{" "}
+                          <Link to="/#"> 3 Comments </Link>{" "}
                         </li>{" "}
                       </ul>{" "}
                     </div>{" "}
@@ -213,8 +211,8 @@ class Blog extends Component {
                     </div>{" "}
                     <div className="post-footer">
                       <div className="post-tags">
-                        <a href="/#"> Lifestyle </a> <a href="/#"> Music </a>{" "}
-                        <a href="/#"> News </a> <a href="/#"> Travel </a>{" "}
+                        <Link to="/#"> Lifestyle </Link> <Link to="/#"> Music </Link>{" "}
+                        <Link to="/#"> News </Link> <Link to="/#"> Travel </Link>{" "}
                       </div>{" "}
                     </div>{" "}
                   </div>{" "}
@@ -233,10 +231,10 @@ class Blog extends Component {
                       <div className="comment-body">
                         <div className="comment-meta">
                           <div className="comment-meta-author">
-                            <a href="/#"> Jason Ford </a>{" "}
+                            <Link to="/#"> Jason Ford </Link>{" "}
                           </div>{" "}
                           <div className="comment-meta-date">
-                            <a href="/#"> May 5, 2015 at 4: 51 am </a>{" "}
+                            <Link to="/#"> May 5, 2015 at 4: 51 am </Link>{" "}
                           </div>{" "}
                         </div>{" "}
                         <div className="comment-content">
@@ -249,7 +247,7 @@ class Blog extends Component {
                           </p>{" "}
                         </div>{" "}
                         <div className="comment-reply">
-                          <a href="/#"> Reply </a>{" "}
+                          <Link to="/#"> Reply </Link>{" "}
                         </div>{" "}
                       </div>{" "}
                       <div className="children">
@@ -264,10 +262,10 @@ class Blog extends Component {
                           <div className="comment-body">
                             <div className="comment-meta">
                               <div className="comment-meta-author">
-                                <a href="/#"> Harry Benson </a>{" "}
+                                <Link to="/#"> Harry Benson </Link>{" "}
                               </div>{" "}
                               <div className="comment-meta-date">
-                                <a href="/#"> May 5, 2015 at 4: 51 am </a>{" "}
+                                <Link to="/#"> May 5, 2015 at 4: 51 am </Link>{" "}
                               </div>{" "}
                             </div>{" "}
                             <div className="comment-content">
@@ -280,7 +278,7 @@ class Blog extends Component {
                               </p>{" "}
                             </div>{" "}
                             <div className="comment-reply">
-                              <a href="/#"> Reply </a>{" "}
+                              <Link to="/#"> Reply </Link>{" "}
                             </div>{" "}
                           </div>{" "}
                         </div>{" "}
@@ -297,10 +295,10 @@ class Blog extends Component {
                       <div className="comment-body">
                         <div className="comment-meta">
                           <div className="comment-meta-author">
-                            <a href="/#"> Henry Cain </a>{" "}
+                            <Link to="/#"> Henry Cain </Link>{" "}
                           </div>{" "}
                           <div className="comment-meta-date">
-                            <a href="/#"> May 5, 2015 at 4: 51 am </a>{" "}
+                            <Link to="/#"> May 5, 2015 at 4: 51 am </Link>{" "}
                           </div>{" "}
                         </div>{" "}
                         <div className="comment-content">
@@ -313,7 +311,7 @@ class Blog extends Component {
                           </p>{" "}
                         </div>{" "}
                         <div className="comment-reply">
-                          <a href="/#"> Reply </a>{" "}
+                          <Link to="/#"> Reply </Link>{" "}
                         </div>{" "}
                       </div>{" "}
                     </div>{" "}
@@ -418,29 +416,29 @@ class Blog extends Component {
                     </div>{" "}
                     <ul>
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Journey <span className="float-right"> 112 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Development <span className="float-right"> 86 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Sport <span className="float-right"> 10 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Photography <span className="float-right"> 144 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                       <li>
-                        <a href="/#">
+                        <Link to="/#">
                           Symphony <span className="float-right"> 18 </span>{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </li>{" "}
                     </ul>{" "}
                   </aside>
@@ -451,55 +449,55 @@ class Blog extends Component {
                     <ul>
                       <li className="clearfix">
                         <div className="wi">
-                          <a href="/#">
+                          <Link to="/#">
                             <img
                               src="img/blog/1.jpg"
                               alt="recent post"
                               className="img-fluid rounded"
                             />
-                          </a>{" "}
+                          </Link>{" "}
                         </div>{" "}
                         <div className="wb">
-                          <a href="/#">
+                          <Link to="/#">
                             Map where your photos were taken and discover local
                             points.{" "}
-                          </a>{" "}
+                          </Link>{" "}
                           <span className="post-date"> May 8, 2016 </span>{" "}
                         </div>{" "}
                       </li>{" "}
                       <li className="clearfix">
                         <div className="wi">
-                          <a href="/#">
+                          <Link to="/#">
                             <img
                               src="img/blog/2.jpg"
                               alt="recent post"
                               className="img-fluid rounded"
                             />
-                          </a>{" "}
+                          </Link>{" "}
                         </div>{" "}
                         <div className="wb">
-                          <a href="/#">
+                          <Link to="/#">
                             Map where your photos were taken and discover local
                             points.{" "}
-                          </a>{" "}
+                          </Link>{" "}
                           <span className="post-date"> May 8, 2016 </span>{" "}
                         </div>{" "}
                       </li>{" "}
                       <li className="clearfix">
                         <div className="wi">
-                          <a href="/#">
+                          <Link to="/#">
                             <img
                               src="img/blog/3.jpg"
                               alt="recent post"
                               className="img-fluid rounded"
                             />
-                          </a>{" "}
+                          </Link>{" "}
                         </div>{" "}
                         <div className="wb">
-                          <a href="/#">
+                          <Link to="/#">
                             Map where your photos were taken and discover local
                             points.{" "}
-                          </a>{" "}
+                          </Link>{" "}
                           <span className="post-date"> May 8, 2016 </span>{" "}
                         </div>{" "}
                       </li>{" "}
@@ -538,9 +536,9 @@ class Blog extends Component {
                       <h6> Tags </h6>{" "}
                     </div>{" "}
                     <div className="tag-cloud">
-                      <a href="/#"> e-commerce </a> <a href="/#"> portfolio </a>{" "}
-                      <a href="/#"> responsive </a> <a href="/#"> bootstrap </a>{" "}
-                      <a href="/#"> business </a> <a href="/#"> corporate </a>{" "}
+                      <Link to="/#"> e-commerce </Link> <Link to="/#"> portfolio </Link>{" "}
+                      <Link to="/#"> responsive </Link> <Link to="/#"> bootstrap </Link>{" "}
+                      <Link to="/#"> business </Link> <Link to="/#"> corporate </Link>{" "}
                     </div>{" "}
                   </aside>{" "}
                 </div>{" "}

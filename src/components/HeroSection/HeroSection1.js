@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { subscribe } from "../../actions/index";
 import _data from "../../data";
+import {Link} from "react-router-dom";
+
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -128,12 +130,11 @@ class HeroSection extends React.Component {
                     </div>
                   </form>
                   <div className="video-promo-content py-4 d-flex align-items-center">
-                    <a
-                      href="https://www.youtube.com/watch?v=9No-FiEInLA"
+                    <Link to="https://www.youtube.com/watch?v=9No-FiEInLA"
                       className="popup-youtube video-play-icon-without-bip video-play-icon mr-3"
                     >
                       <span className="ti-control-play"> </span>
-                    </a>
+                    </Link>
                     Watch Video Overview
                   </div>
                 </div>

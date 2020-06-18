@@ -1,6 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { resetPassword } from "../../actions/index";
+import {Link} from "react-router-dom";
+
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -146,7 +148,7 @@ class HeroSection extends React.Component {
                     </button>
                     <p className="text-center">
                       <small className="text-muted text-center">
-                        Remember your password ? <a href="login1"> Log in </a>.{" "}
+                        Remember your password ? <Link to="login1"> Log in </Link>.{" "}
                       </small>{" "}
                     </p>{" "}
                   </form>{" "}

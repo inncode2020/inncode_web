@@ -17,9 +17,6 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        {/* <button onClick={this.simpleAction}>Test redux action</button>
-          <pre>{JSON.stringify(this.props)}</pre>
-          <h1 className="float-centre">Hello Team !</h1> */}
         <Routes />
       </Fragment>
     );

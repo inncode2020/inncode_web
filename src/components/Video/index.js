@@ -1,5 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
+import {Link} from "react-router-dom";
+
 
 class Video extends React.Component {
   constructor(props) {
@@ -30,12 +32,11 @@ class Video extends React.Component {
             <div className="row justify-content-center">
               <div className="col-md-6">
                 <div className="video-promo-content mt-4 text-center">
-                  <a
-                    href="https://www.youtube.com/watch?v=9No-FiEInLA"
+                  <Link to ="https://www.youtube.com/watch?v=9No-FiEInLA"
                     className="popup-youtube video-play-icon d-inline-block"
                   >
                     <span className="ti-control-play"> </span>{" "}
-                  </a>{" "}
+                  </Link>{" "}
                   <h5 className="mt-4 text-web-primary">
                     {" "}
                     Watch video overview{" "}
@@ -43,12 +44,12 @@ class Video extends React.Component {
                   {this.props.showDownloadBtn &&
                     this.props.showDownloadBtn === true && (
                       <div className="download-btn mt-5">
-                        <a href="/#" className="btn google-play-btn mr-3">
+                        <Link to="/#" className="btn google-play-btn mr-3">
                           <span className="ti-android"> </span> Google Play{" "}
-                        </a>{" "}
-                        <a href="/#" className="btn app-store-btn">
+                        </Link>{" "}
+                        <Link to="/#" className="btn app-store-btn">
                           <span className="ti-apple"> </span> App Store{" "}
-                        </a>{" "}
+                        </Link>{" "}
                       </div>
                     )}{" "}
                 </div>{" "}

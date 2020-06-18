@@ -1,5 +1,7 @@
 import React from "react";
 import _data from "../../data";
+import {Link} from "react-router-dom";
+
 
 class TeamMember extends React.Component {
   constructor(props) {
@@ -53,24 +55,24 @@ class TeamMember extends React.Component {
                         <h6> {member.designation} </h6>
                         <ul className="list-inline team-social social-icon mt-4 text-web-primary">
                           <li className="list-inline-item">
-                            <a href="/#">
+                            <Link to="/#">
                               <span className="ti-facebook"> </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="list-inline-item">
-                            <a href="/#">
+                            <Link to="/#">
                               <span className="ti-twitter"> </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="list-inline-item">
-                            <a href="/#">
+                            <Link to="/#">
                               <span className="ti-github"> </span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="list-inline-item">
-                            <a href="/#">
+                            <Link to="/#">
                               <span className="ti-dribbble"> </span>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>

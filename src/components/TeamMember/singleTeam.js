@@ -1,12 +1,14 @@
-import React from "react";
-import _data from "../../data";
+import React from 'react'
+import { withRouter } from 'react-router-dom'
+import _data from '../../data'
+import { Link } from 'react-router-dom'
 
 class TeamMember extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       teamMember: {},
-    };
+    }
   }
 
   componentDidMount() {
@@ -15,10 +17,12 @@ class TeamMember extends React.Component {
      */
     this.setState({
       teamMember: _data.teamMember,
-    });
+    })
   }
 
   render() {
+    const { name, designation, id } = this.props.history.location.state.item
+    // console.log('this.props.item', this.props.history.location.state)
     return (
       <React.Fragment>
         <section className="team-single-section ptb-100">
@@ -27,209 +31,214 @@ class TeamMember extends React.Component {
               <div className="col-md-12 col-sm-12 col-lg-5">
                 <div className="team-single-img">
                   <img
-                    src="img/team-1.jpg"
+                    src={`img/team-${id}.jpeg`}
                     alt="member"
                     className="img-fluid rounded shadow-sm"
                   />
-                </div>{" "}
-              </div>{" "}
+                </div>{' '}
+              </div>{' '}
               <div className="col-md-12 col-sm-12 col-lg-6">
                 <div className="team-single-text">
                   <div className="team-name mb-4">
-                    <h4 className="mb-1"> Henry Ford </h4>{" "}
-                    <span> Managing Director </span>{" "}
-                  </div>{" "}
+                    <h4 className="mb-1"> {name} </h4>{' '}
+                    <span> {designation}</span>{' '}
+                  </div>{' '}
                   <ul className="team-single-info">
                     <li>
-                      <strong> Phone: </strong>{" "}
-                      <span> (+123) 123-456-789 </span>{" "}
-                    </li>{" "}
+                      <strong> Phone: </strong> <span> (+91) 8210988275 </span>{' '}
+                    </li>{' '}
                     <li>
-                      <strong> Email: </strong>{" "}
-                      <span> yourname @domain.com </span>{" "}
-                    </li>{" "}
-                  </ul>{" "}
+                      <strong> Email: </strong>{' '}
+                      <span> aman15aditya@gmail.com </span>{' '}
+                    </li>{' '}
+                  </ul>{' '}
                   <div className="text-content mt-20">
                     <p>
                       Authoritatively deploy fully researched leadership skills
                       whereas one-to-one best practices.Monotonectally aggregate
                       virtual imperatives and accurate technology.Dynamically
-                      streamline progressive sources before user friendly.{" "}
-                    </p>{" "}
+                      streamline progressive sources before user friendly.{' '}
+                    </p>{' '}
                     <p>
                       Enthusiastically synthesize cross-unit technology for
-                      sticky results.{" "}
-                    </p>{" "}
+                      sticky results.{' '}
+                    </p>{' '}
                     <p>
                       Progressively productize vertical alignments after sticky
                       process improvements.Competently scale transparent methods
-                      of empowerment and visionary products.{" "}
-                    </p>{" "}
-                  </div>{" "}
+                      of empowerment and visionary products.{' '}
+                    </p>{' '}
+                  </div>{' '}
                   <ul className="team-social-list list-inline mt-4">
                     <li className="list-inline-item">
-                      <a href="/#" className="color-primary">
-                        <span className="ti-facebook"> </span>{" "}
-                      </a>{" "}
-                    </li>{" "}
+                      <Link to="/#" className="color-primary">
+                        <span className="ti-facebook" title="facebook">
+                          {' '}
+                        </span>{' '}
+                      </Link>{' '}
+                    </li>{' '}
                     <li className="list-inline-item">
-                      <a href="/#" className="color-primary">
-                        <span className="ti-instagram"> </span>{" "}
-                      </a>{" "}
-                    </li>{" "}
+                      <Link to="/#" className="color-primary">
+                        <span className="ti-instagram" title="instagram">
+                          {' '}
+                        </span>{' '}
+                      </Link>{' '}
+                    </li>{' '}
                     <li className="list-inline-item">
-                      <a href="/#" className="color-primary">
-                        <span className="ti-dribbble"> </span>{" "}
-                      </a>{" "}
-                    </li>{" "}
+                      <Link to="/#" className="color-primary">
+                        <span className="ti-dribbble"> </span>{' '}
+                      </Link>{' '}
+                    </li>{' '}
                     <li className="list-inline-item">
-                      <a href="/#" className="color-primary">
-                        <span className="ti-linkedin"> </span>{" "}
-                      </a>{" "}
-                    </li>{" "}
-                  </ul>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
+                      <Link to="/#" className="color-primary">
+                        <span className="ti-linkedin" title="linkedin">
+                          {' '}
+                        </span>{' '}
+                      </Link>{' '}
+                    </li>{' '}
+                  </ul>{' '}
+                </div>{' '}
+              </div>{' '}
+            </div>{' '}
             <div className="row mt-5">
               <div className="col-md-6 col-sm-6 col-12">
                 <div className="section-heading">
-                  <h5> Activities And Skills </h5>{" "}
-                  <div className="section-heading-line-left"> </div>{" "}
-                </div>{" "}
+                  <h5> Activities And Skills </h5>{' '}
+                  <div className="section-heading-line-left"> </div>{' '}
+                </div>{' '}
                 <ul className="list-unstyled">
                   <li className="py-2">
                     <div className="d-flex align-items-center">
                       <div>
                         <div className="badge badge-primary mr-3">
-                          <span className="ti-check"> </span>{" "}
-                        </div>{" "}
-                      </div>{" "}
+                          <span className="ti-check"> </span>{' '}
+                        </div>{' '}
+                      </div>{' '}
                       <div>
                         <p className="mb-0">
-                          Good Business Consultants are Excellent Communicators{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
-                  </li>{" "}
+                          Good Business Consultants are Excellent Communicators{' '}
+                        </p>{' '}
+                      </div>{' '}
+                    </div>{' '}
+                  </li>{' '}
                   <li className="py-2">
                     <div className="d-flex align-items-center">
                       <div>
                         <div className="badge badge-primary mr-3">
-                          <span className="ti-check"> </span>{" "}
-                        </div>{" "}
-                      </div>{" "}
+                          <span className="ti-check"> </span>{' '}
+                        </div>{' '}
+                      </div>{' '}
                       <div>
                         <p className="mb-0">
                           At the End of a Project, Good Business Consultants
-                          Can“ Let it Go”{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
-                  </li>{" "}
+                          Can“ Let it Go”{' '}
+                        </p>{' '}
+                      </div>{' '}
+                    </div>{' '}
+                  </li>{' '}
                   <li className="py-2">
                     <div className="d-flex align-items-center">
                       <div>
                         <div className="badge badge-primary mr-3">
-                          <span className="ti-check"> </span>{" "}
-                        </div>{" "}
-                      </div>{" "}
+                          <span className="ti-check"> </span>{' '}
+                        </div>{' '}
+                      </div>{' '}
                       <div>
                         <p className="mb-0">
                           Good Business Consultants are Willing to Travel Where
-                          the Work Is{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
-                  </li>{" "}
+                          the Work Is{' '}
+                        </p>{' '}
+                      </div>{' '}
+                    </div>{' '}
+                  </li>{' '}
                   <li className="py-2">
                     <div className="d-flex align-items-center">
                       <div>
                         <div className="badge badge-primary mr-3">
-                          <span className="ti-check"> </span>{" "}
-                        </div>{" "}
-                      </div>{" "}
+                          <span className="ti-check"> </span>{' '}
+                        </div>{' '}
+                      </div>{' '}
                       <div>
                         <p className="mb-0">
                           Write a Business Plan that Clearly Articulates the
-                          Following{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
-                  </li>{" "}
-                </ul>{" "}
-              </div>{" "}
+                          Following{' '}
+                        </p>{' '}
+                      </div>{' '}
+                    </div>{' '}
+                  </li>{' '}
+                </ul>{' '}
+              </div>{' '}
               <div className="col-md-6 col-sm-6 col-12">
                 <div className="section-heading mt-40">
-                  <h5> Professional Skills </h5>{" "}
-                  <div className="section-heading-line-left"> </div>{" "}
-                </div>{" "}
+                  <h5> Professional Skills </h5>{' '}
+                  <div className="section-heading-line-left"> </div>{' '}
+                </div>{' '}
                 <div className="mt-3">
                   <div className="progress-item">
                     <div className="progress-title">
                       <h6>
-                        Web Development{" "}
+                        Web Development{' '}
                         <span className="float-right">
-                          <span className="progress-number"> 60 </span>%{" "}
-                        </span>{" "}
-                      </h6>{" "}
-                    </div>{" "}
+                          <span className="progress-number"> 60 </span>%{' '}
+                        </span>{' '}
+                      </h6>{' '}
+                    </div>{' '}
                     <div className="progress p-1">
                       <span
                         style={{
-                          width: "60%",
+                          width: '60%',
                         }}
                       >
-                        <span className="progress-line"> </span>{" "}
-                      </span>{" "}
-                    </div>{" "}
-                  </div>{" "}
+                        <span className="progress-line"> </span>{' '}
+                      </span>{' '}
+                    </div>{' '}
+                  </div>{' '}
                   <div className="progress-item">
                     <div className="progress-title">
                       <h6>
-                        User Experience{" "}
+                        User Experience{' '}
                         <span className="float-right">
-                          <span className="progress-number"> 80 </span>%{" "}
-                        </span>{" "}
-                      </h6>{" "}
-                    </div>{" "}
+                          <span className="progress-number"> 80 </span>%{' '}
+                        </span>{' '}
+                      </h6>{' '}
+                    </div>{' '}
                     <div className="progress p-1">
                       <span
                         style={{
-                          width: "80%",
+                          width: '80%',
                         }}
                       >
-                        <span className="progress-line"> </span>{" "}
-                      </span>{" "}
-                    </div>{" "}
-                  </div>{" "}
+                        <span className="progress-line"> </span>{' '}
+                      </span>{' '}
+                    </div>{' '}
+                  </div>{' '}
                   <div className="progress-item">
                     <div className="progress-title">
                       <h6>
-                        Front-End Framework{" "}
+                        Front-End Framework{' '}
                         <span className="float-right">
-                          <span className="progress-number"> 50 </span>%{" "}
-                        </span>{" "}
-                      </h6>{" "}
-                    </div>{" "}
+                          <span className="progress-number"> 50 </span>%{' '}
+                        </span>{' '}
+                      </h6>{' '}
+                    </div>{' '}
                     <div className="progress p-1">
                       <span
                         style={{
-                          width: "50%",
+                          width: '50%',
                         }}
                       >
-                        <span className="progress-line"> </span>{" "}
-                      </span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </section>{" "}
+                        <span className="progress-line"> </span>{' '}
+                      </span>{' '}
+                    </div>{' '}
+                  </div>{' '}
+                </div>{' '}
+              </div>{' '}
+            </div>{' '}
+          </div>{' '}
+        </section>{' '}
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default TeamMember;
+export default withRouter(TeamMember)

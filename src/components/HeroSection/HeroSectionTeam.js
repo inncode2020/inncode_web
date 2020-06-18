@@ -1,5 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
+import {Link} from "react-router-dom";
+
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -33,10 +35,10 @@ class HeroSection extends React.Component {
                   <div className="custom-breadcrumb">
                     <ol className="breadcrumb d-inline-block bg-transparent list-inline py-0">
                       <li className="list-inline-item breadcrumb-item">
-                        <a href="/#"> Home </a>
+                        <Link to="/#"> Home </Link>
                       </li>
                       <li className="list-inline-item breadcrumb-item">
-                        <a href="/#"> Pages </a>
+                        <Link to="/#"> Pages </Link>
                       </li>
                       <li className="list-inline-item breadcrumb-item active">
                         Our Team

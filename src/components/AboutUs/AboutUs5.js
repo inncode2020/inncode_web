@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 class About extends React.Component {
   constructor(props) {
@@ -67,9 +69,9 @@ class About extends React.Component {
                       of -breed human{" "}
                     </p>{" "}
                   </div>{" "}
-                  <a href="/#" className="btn solid-btn mt-2">
+                  <Link to="/#" className="btn solid-btn mt-2">
                     View additional 10 + features{" "}
-                  </a>{" "}
+                  </Link>{" "}
                 </div>{" "}
               </div>{" "}
               <div className="col-md-6">

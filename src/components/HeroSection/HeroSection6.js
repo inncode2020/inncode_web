@@ -1,6 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getQuote } from "../../actions/index";
+import {Link} from "react-router-dom";
+
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -109,7 +111,7 @@ class HeroSection extends React.Component {
                       className="popup-youtube video-play-icon"
                     >
                       <span className="ti-control-play"> </span>
-                    </a>
+                    </Link>
                     <span className="ml-4"> Watch video overview </span>
                   </div> */}
                 </div>
@@ -196,7 +198,7 @@ class HeroSection extends React.Component {
                         id="ckbAgree"
                       />
                       <label className="form-check-label" htmlFor="ckbAgree">
-                        I agree your <a href="/#"> terms & conditions </a>
+                        I agree your <Link to="/#"> terms & conditions </Link>
                       </label>
                     </div>
                   </form>
