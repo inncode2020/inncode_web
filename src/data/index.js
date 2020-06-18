@@ -63,7 +63,7 @@ module.exports = {
       "Uniquely maintain efficient expertise whereas cross functional deliverables. Continually leverage other's competitive mind share whereas enabled channels. ",
     packages: [
       {
-        price: "$29",
+        price: "10k-25k",
         license: "Basic",
         isFeatured: false,
         features: [
@@ -77,7 +77,7 @@ module.exports = {
         ],
       },
       {
-        price: "$50",
+        price: "25k-50k",
         license: "Popular",
         isFeatured: true,
         features: [
@@ -91,7 +91,7 @@ module.exports = {
         ],
       },
       {
-        price: "$120",
+        price: "50k < ",
         license: "Extended",
         isFeatured: false,
         features: [
@@ -185,24 +185,24 @@ module.exports = {
   teamMember: {
     members: [
       {
-        name: "Edna Mason",
-        designation: "Senior Designer",
-        image: "img/team-4.jpg",
+        name: "Aman Singh",
+        designation: "WEB DEVELOPER",
+        image: "img/team-1.jpeg",
       },
       {
-        name: "Arabella Ora",
-        designation: "Senior Designer",
-        image: "img/team-1.jpg",
+        name: "Shubham Singh",
+        designation: "BACKEND DEVELOPER",
+        image: "img/team-2.jpeg",
       },
       {
-        name: "John Charles",
-        designation: "Senior Designer",
-        image: "img/team-2.jpg",
+        name: "Aniket",
+        designation: "GRAPHIC DESIGNER",
+        image: "img/team-3.jpeg",
       },
       {
-        name: "Jeremy Jere",
-        designation: "Senior Designer",
-        image: "img/team-3.jpg",
+        name: "Asif Hussain",
+        designation: "BUSSINESS ANALYST",
+        image: "img/team-4.jpeg",
       },
     ],
   },
