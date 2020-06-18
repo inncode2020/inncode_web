@@ -21,7 +21,7 @@ class About extends React.Component {
               <div className="col-md-6">
                 <div className="about-content-right">
                   <img
-                    src="img/delivery-app.svg"
+                    src="img/who-we-are.png"
                     width="500"
                     alt="about us"
                     className="img-fluid"

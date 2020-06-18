@@ -23,7 +23,7 @@ class Feature extends React.Component {
             <div
               className="background-image-holder"
               style={{
-                backgroundImage: "url('img/about-img.jpg')",
+                backgroundImage: "url('img/responsive-web.jpg')",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
                 backgroundSize: "cover",
@@ -77,7 +77,7 @@ class Feature extends React.Component {
                         <h5> Friendly online support </h5>{" "}
                         <p className="mb-0">
                           We don't want to push our ideas on to customers, we
-                          simply want to make what they want{" "}
+                          simply want to make what they want.{" "}
                         </p>{" "}
                       </div>{" "}
                     </div>{" "}
