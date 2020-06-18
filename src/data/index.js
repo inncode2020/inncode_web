@@ -3,7 +3,7 @@ module.exports = {
     title: "Brainstorming for desired perfect Usability",
     description:
       "Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!",
-    bgImage: "img/app-hero-bg.jpg"
+    bgImage: "img/app-hero-bg.jpg",
   },
   promo: {
     title: "Affordable Web Design for Small Business?",
@@ -14,26 +14,26 @@ module.exports = {
         title: "MOBILE DEVELOPMENT",
         description:
           "We build with the most modern and advanced website development tools.",
-        icon: "ti-mobile text-web-primary"
+        icon: "ti-mobile text-web-primary",
       },
       {
         title: "AFFORDABLE WEB DESIGN SERVICES",
         description:
           "Most of our small business web design projects comes in budget.",
-        icon: "ti-desktop text-web-primary"
+        icon: "ti-desktop text-web-primary",
       },
       {
-        title: "LEAD GENERATION",
+        title: "PRODUCTION SUPPORT",
         description:
-          "You don’t want just a stunning graphic design website. You want a stunning website design that will generate leads.",
-        icon: "ti-eye text-web-primary"
-      }
-    ]
+          "Applying analytical thinking and knowledge of data analysis tools and methodologies to provide esiliency events support.",
+        icon: "ti-eye text-web-primary",
+      },
+    ],
   },
   aboutUs: {
     title: {
       bold: "Use your android or ios device",
-      normal: ""
+      normal: "",
     },
     description:
       "Following reasons show advantages of adding AgencyCo to your lead pages, demos and checkouts",
@@ -41,21 +41,21 @@ module.exports = {
       {
         title: "Clean Design",
         description: "Increase sales by showing true dynamics of your website",
-        icon: "ti-vector text-web-primary"
+        icon: "ti-vector text-web-primary",
       },
       {
         title: "Secure Data",
         description:
           "Build your online store’s trust using Social Proof & Urgency",
-        icon: "ti-lock text-web-primary"
+        icon: "ti-lock text-web-primary",
       },
       {
         title: "Retina Ready",
         description:
           "Realize importance of social proof in customer’s purchase decision",
-        icon: "ti-eye text-web-primary"
-      }
-    ]
+        icon: "ti-eye text-web-primary",
+      },
+    ],
   },
   price: {
     title: "Pricing Packages",
@@ -73,8 +73,8 @@ module.exports = {
           "Search & SEO Analytics",
           "24/7 Phone Support",
           "2 months technical support",
-          "2+ profitable keyword"
-        ]
+          "2+ profitable keyword",
+        ],
       },
       {
         price: "$50",
@@ -87,8 +87,8 @@ module.exports = {
           "Search & SEO Analytics",
           "24/7 Phone Support",
           "6 months technical support",
-          "30+ profitable keyword"
-        ]
+          "30+ profitable keyword",
+        ],
       },
       {
         price: "$120",
@@ -101,10 +101,10 @@ module.exports = {
           "Search & SEO Analytics",
           "24/7 Phone Support",
           "1 year technical support",
-          "70+ profitable keyword"
-        ]
-      }
-    ]
+          "70+ profitable keyword",
+        ],
+      },
+    ],
   },
   testimonial: {
     title: "What customer say about us",
@@ -112,34 +112,34 @@ module.exports = {
       'Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business. Conveniently innovate compelling internal.',
     comments: [
       {
-        name: "Arabella Ora",
-        company: "AgencyCo",
+        name: "Dhananjay Kumar",
+        company: "Travels4U",
         image: "img/client-2.jpg",
         comment:
-          "Completely build backend ROI whereas cross-media metrics. Collaboratively deploy customer directed web-readiness via global testing procedures. Appropriately reinvent distributed innovation without proactive catalysts for change. Distinctively."
+          "We value our relationship with Inncode Solutions. They’ve proven themselves to be capable and willing partners in numerous development projects, and their ability to code in many environments gives us a opportunity to think more.",
       },
       {
-        name: "John Charles",
-        company: "Inncode",
-        image: "img/client-1.jpg",
+        name: "Aman Pandey",
+        company: "Fill Ur Basket",
+        image: "img/ClientReal -1.jpg",
         comment:
-          "If you can design one thing you can design everything with Front. Just believe it. Collaboratively repurpose performance based e-commerce without cost. It's beautiful and the coding is done quickly and seamlessly."
+          "The team at Inncode Solutions is simply the best. What makes Inncoders so great is their attention to detail,  availability and most importantly, their knowledge and expertise to deliver on time and according to requirements.",
       },
       {
-        name: "Jeremy Jere",
-        company: "WorldCheck",
-        image: "img/client-3.jpg",
+        name: "Payal",
+        company: "Gurukwool",
+        image: "img/Client-3.jpg",
         comment:
-          "The template is really nice and offers quite a large set of options. It's beautiful and the coding is done. If you can design one thing you can design everything with Front. Just believe it."
+          "I am very pleased with the project you have done, and especially your commitment to providing a quality solution when it meant going the extra mile to do so.",
       },
       {
-        name: "Ciaran Kierce",
-        company: "Inncode",
+        name: "Sumit Singh",
+        company: "Paws-Junction",
         image: "img/client-4.jpg",
         comment:
-          "I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. It’s really great how easy your websites are to update and manage. I never have any problem at all."
-      }
-    ]
+          "Inncode Solutions offers highly skilled people and a high integrity approach.They are fast, effective, responsive, well managed, and always deliver what is needed or go  beyond.It is a joy to work with my Inncode Solutions Team.",
+      },
+    ],
   },
   contact: {
     title: "Contact with us",
@@ -147,23 +147,23 @@ module.exports = {
       "It's very easy to get in touch with us. Just use the contact form or pay us a visit for a coffee at the office. Dynamically innovate competitive technology after an expanded array of leadership.",
 
     office: "Head Office",
-    address: "K2-01, Telco Colony, Jamshedpur - 831004",
+    address: "Sector 55, Sushant Lok Block 2, Gurgaon, Haryana, India - 122011",
     phone: "+91 8210988275",
-    email: "info@inncodesolutions.com"
+    email: "hello.inncodesolutions@gmail.com",
   },
   trustedCompany: [
     "img/client-1-color.png",
     "img/client-6-color.png",
     "img/client-3-color.png",
     "img/client-4-color.png",
-    "img/client-5-color.png"
+    "img/client-5-color.png",
   ],
   trustedCompanyGray: [
     "img/client-1-gray.png",
     "img/client-2-gray.png",
     "img/client-3-gray.png",
     "img/client-4-gray.png",
-    "img/client-5-gray.png"
+    "img/client-5-gray.png",
   ],
   trustedCompanyAboutUs: {
     title: "Trusted by companies",
@@ -179,34 +179,34 @@ module.exports = {
       "img/client-7-color.png",
       "img/client-2-color.png",
       "img/client-1-color.png",
-      "img/client-3-color.png"
-    ]
+      "img/client-3-color.png",
+    ],
   },
   teamMember: {
     members: [
       {
         name: "Edna Mason",
         designation: "Senior Designer",
-        image: "img/team-4.jpg"
+        image: "img/team-4.jpg",
       },
       {
         name: "Arabella Ora",
         designation: "Senior Designer",
-        image: "img/team-1.jpg"
+        image: "img/team-1.jpg",
       },
       {
         name: "John Charles",
         designation: "Senior Designer",
-        image: "img/team-2.jpg"
+        image: "img/team-2.jpg",
       },
       {
         name: "Jeremy Jere",
         designation: "Senior Designer",
-        image: "img/team-3.jpg"
-      }
-    ]
+        image: "img/team-3.jpg",
+      },
+    ],
   },
   video: {
-    link: "https://www.youtube.com/watch?v=9No-FiEInLA"
-  }
+    link: "https://www.youtube.com/watch?v=9No-FiEInLA",
+  },
 };

@@ -27,23 +27,24 @@ class Review extends React.Component {
                         alt="quote"
                         className="img-fluid"
                       />{" "}
-                      Rapidiously develop user friendly growth strategies after
-                      extensive initiatives.Conveniently grow innovative
-                      benefits through fully tested deliverables.Rapidiously
-                      utilize focused platforms through end-to-end schemas.{" "}
+                      The team at Inncode Solutions is simply the best. What
+                      makes Inncoders so great is their attention to detail,
+                      availability and most importantly, their knowledge and
+                      expertise to deliver on time and according to
+                      requirements.{" "}
                     </p>{" "}
                   </div>{" "}
                   <div className="media author-info mb-3">
                     <div className="author-img mr-3">
                       <img
-                        src="img/client-1.jpg"
+                        src="img/ClientReal -1.jpg"
                         alt="client"
                         className="img-fluid rounded-circle"
                       />
                     </div>{" "}
                     <div className="media-body">
-                      <h5 className="mb-0"> Arabella Orin </h5>{" "}
-                      <span> Inncode </span>{" "}
+                      <h5 className="mb-0"> Aman Pandey </h5>{" "}
+                      <span> Fill Ur Basket </span>{" "}
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
@@ -57,10 +58,10 @@ class Review extends React.Component {
                         alt="quote"
                         className="img-fluid"
                       />{" "}
-                      Rapidiously develop user friendly growth strategies after
-                      extensive initiatives.Conveniently grow innovative
-                      benefits through fully tested deliverables.Rapidiously
-                      utilize focused platforms through end-to-end schemas.{" "}
+                      We value our relationship with Inncode Solutions. They’ve
+                      proven themselves to be capable and willing partners in
+                      numerous development projects, and their ability to code
+                      in many environments gives us a opportunity to think more.{" "}
                     </p>{" "}
                   </div>{" "}
                   <div className="media author-info mb-3">
@@ -72,8 +73,8 @@ class Review extends React.Component {
                       />
                     </div>{" "}
                     <div className="media-body">
-                      <h5 className="mb-0"> Runu Mondol </h5>{" "}
-                      <span> BizBite </span>{" "}
+                      <h5 className="mb-0"> Dhananjay Kumar </h5>{" "}
+                      <span> Travels4U </span>{" "}
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
@@ -87,23 +88,21 @@ class Review extends React.Component {
                         alt="quote"
                         className="img-fluid"
                       />{" "}
-                      Rapidiously develop user friendly growth strategies after
-                      extensive initiatives.Conveniently grow innovative
-                      benefits through fully tested deliverables.Rapidiously
-                      utilize focused platforms through end-to-end schemas.{" "}
+                      I am very pleased with the project you have done, and
+                      especially your commitment to providing a quality solution
+                      when it meant going the extra mile to do so.{" "}
                     </p>{" "}
                   </div>{" "}
                   <div className="media author-info mb-3">
                     <div className="author-img mr-3">
                       <img
-                        src="img/client-3.jpg"
+                        src="img/Client-3.jpg"
                         alt="client"
                         className="img-fluid rounded-circle"
                       />
                     </div>{" "}
                     <div className="media-body">
-                      <h5 className="mb-0"> Orko Arif </h5>{" "}
-                      <span> Bizbite </span>{" "}
+                      <h5 className="mb-0"> Payal </h5> <span> Gurukwool </span>{" "}
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
@@ -117,10 +116,11 @@ class Review extends React.Component {
                         alt="quote"
                         className="img-fluid"
                       />{" "}
-                      Rapidiously develop user friendly growth strategies after
-                      extensive initiatives.Conveniently grow innovative
-                      benefits through fully tested deliverables.Rapidiously
-                      utilize focused platforms through end-to-end schemas.{" "}
+                      Inncode Solutions offers highly skilled people and a high
+                      integrity approach. They are fast, effective, responsive,
+                      well managed, and always deliver what is needed or go
+                      beyond. It is a joy to work with my Inncode Solutions
+                      Team.{" "}
                     </p>{" "}
                   </div>{" "}
                   <div className="media author-info mb-3">
@@ -132,13 +132,13 @@ class Review extends React.Component {
                       />
                     </div>{" "}
                     <div className="media-body">
-                      <h5 className="mb-0"> Rana Tabik </h5>{" "}
-                      <span> Inncode Ltd </span>{" "}
+                      <h5 className="mb-0"> Sumit Singh </h5>{" "}
+                      <span> Paws-Junction </span>{" "}
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
-              <div className="col-md-6 col-sm-6 col-lg-6">
+              {/* <div className="col-md-6 col-sm-6 col-lg-6">
                 <div className="testimonial-quote-wrap my-lg-3 my-md-3 rounded white-bg shadow-sm p-5">
                   <div className="client-say">
                     <p>
@@ -167,8 +167,8 @@ class Review extends React.Component {
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
-              </div>{" "}
-              <div className="col-md-6 col-sm-6 col-lg-6">
+              </div>{" "} */}
+              {/* <div className="col-md-6 col-sm-6 col-lg-6">
                 <div className="testimonial-quote-wrap my-lg-3 my-md-3 rounded white-bg shadow-sm p-5">
                   <div className="client-say">
                     <p>
@@ -197,7 +197,7 @@ class Review extends React.Component {
                     </div>{" "}
                   </div>{" "}
                 </div>{" "}
-              </div>{" "}
+              </div>{" "} */}
             </div>{" "}
           </div>{" "}
         </section>{" "}
