@@ -10,7 +10,19 @@
       "phone": "Phone:",
       "phoneValue": "(+91) 8210988275",
       "email": "Email:",
-      "emailValue": "aman15aditya@gmail.com"
+      "emailValue": "aman15aditya@gmail.com",
+      "skills": "Professional Skills",
+      "subSkills1": "Web Development",
+      "subSkills1Value": "80 %",
+      "subSkills2": "User Experience",
+      "subSkills2Value": "65 %",
+      "subSkills3": "Front-End Framework",
+      "subSkills3Value": "75 %",
+      "activitiesSkill": "Activities And Skills",
+      "activities1": "Good Business Consultants are Excellent Communicators",
+      "activities2": "Troubleshoot website problems.",
+      "activities3": "Maintain and update websites",
+      "activities4": "Often implementing ideas that others may have even those others lack the technical know-how to turn those ideas into an actual, functional website."
     },
     {
       "id": 2,
@@ -22,7 +34,19 @@
       "phone": "Phone:",
       "phoneValue": "(+91) 7979070712",
       "email": "Email:",
-      "emailValue": "shubham.inncoder@gmail.com"
+      "emailValue": "shubham.inncoder@gmail.com",
+      "skills": "Professional Skills",
+      "subSkills1": "Web Development",
+      "subSkills1Value": "75 %",
+      "subSkills2": "User Experience",
+      "subSkills2Value": "60 %",
+      "subSkills3": "Cloud architech",
+      "subSkills3Value": "70 %",
+      "activitiesSkill": "Activities And Skills",
+      "activities1": "Skills are mostly made up of coding languages and software frameworks.",
+      "activities2": "Understands the goals of the website and come up with effective solutions",
+      "activities3": "Storing data and also ensuring that it is displayed to that user who are supposed to have access to it",
+      "activities4": "Manage APIs resources which work across devices"
     },
     {
       "id": 3,
@@ -34,7 +58,19 @@
       "phone": "Phone:",
       "phoneValue": "(+91) 9660426119",
       "email": "Email:",
-      "emailValue": "aniket.inncode@gmail.com"
+      "emailValue": "aniket.inncode@gmail.com",
+      "skills": "Professional Skills",
+      "subSkills1": "Web Development",
+      "subSkills1Value": "60 %",
+      "subSkills2": "User Experience",
+      "subSkills2Value": "70 %",
+      "subSkills3": "Graphic Gesigning",
+      "subSkills3Value": "65 %",
+      "activitiesSkill": "Activities And Skills",
+      "activities1": "Able to use digital illustration, photo editing software, and layout software to create designs",
+      "activities2": "Clear idea to present design concepts to clients or art directors",
+      "activities3": "Can create visual elements such as logos, original images, and illustrations to help deliver a message",
+      "activities4": "Review designs for errors before printing or publishing them"
     },
     {
       "id": 4,
@@ -46,7 +82,19 @@
       "phone": "Phone:",
       "phoneValue": "(+91) 9031183972",
       "email": "Email:",
-      "emailValue": "asif.inncoder@gmail.com"
+      "emailValue": "asif.inncoder@gmail.com",
+      "skills": "Professional Skills",
+      "subSkills1": "Web Development",
+      "subSkills1Value": "65 %",
+      "subSkills2": "User Experience",
+      "subSkills2Value": "70 %",
+      "subSkills3": "BA Experience",
+      "subSkills3Value": "75 %",
+      "activitiesSkill": "Activities And Skills",
+      "activities1": "Being able to interpret direction",
+      "activities2": "Good Business Consultants are Excellent Communicators and able to make points clear and unambiguous.",
+      "activities3": "Listening skills are key to being a successful BA. Able to listen and absorb information",
+      "activities4": "Write a Business Plan that Clearly Articulates the Following"
     }
   ]
 }

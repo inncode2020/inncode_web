@@ -32,6 +32,18 @@ class TeamMember extends React.Component {
       introText,
       introText2,
       introText3,
+      skills,
+      subSkills1,
+      subSkills2,
+      subSkills3,
+      subSkills1Value,
+      subSkills2Value,
+      subSkills3Value,
+      activitiesSkill,
+      activities1,
+      activities2,
+      activities3,
+      activities4,
     } = this.props.history.location.state.item;
 
     // console.log('this.props.item', this.props.history.location.state)
@@ -102,7 +114,7 @@ class TeamMember extends React.Component {
             <div className="row mt-5">
               <div className="col-md-6 col-sm-6 col-12">
                 <div className="section-heading">
-                  <h5> Activities And Skills </h5>{" "}
+                  <h5> {activitiesSkill} </h5>{" "}
                   <div className="section-heading-line-left"> </div>{" "}
                 </div>{" "}
                 <ul className="list-unstyled">
@@ -114,9 +126,7 @@ class TeamMember extends React.Component {
                         </div>{" "}
                       </div>{" "}
                       <div>
-                        <p className="mb-0">
-                          Good Business Consultants are Excellent Communicators{" "}
-                        </p>{" "}
+                        <p className="mb-0">{activities1} </p>{" "}
                       </div>{" "}
                     </div>{" "}
                   </li>{" "}
@@ -128,10 +138,7 @@ class TeamMember extends React.Component {
                         </div>{" "}
                       </div>{" "}
                       <div>
-                        <p className="mb-0">
-                          At the End of a Project, Good Business Consultants
-                          Can“ Let it Go”{" "}
-                        </p>{" "}
+                        <p className="mb-0">{activities2} </p>{" "}
                       </div>{" "}
                     </div>{" "}
                   </li>{" "}
@@ -143,10 +150,7 @@ class TeamMember extends React.Component {
                         </div>{" "}
                       </div>{" "}
                       <div>
-                        <p className="mb-0">
-                          Good Business Consultants are Willing to Travel Where
-                          the Work Is{" "}
-                        </p>{" "}
+                        <p className="mb-0">{activities3} </p>{" "}
                       </div>{" "}
                     </div>{" "}
                   </li>{" "}
@@ -158,10 +162,7 @@ class TeamMember extends React.Component {
                         </div>{" "}
                       </div>{" "}
                       <div>
-                        <p className="mb-0">
-                          Write a Business Plan that Clearly Articulates the
-                          Following{" "}
-                        </p>{" "}
+                        <p className="mb-0">{activities4} </p>{" "}
                       </div>{" "}
                     </div>{" "}
                   </li>{" "}
@@ -169,16 +170,19 @@ class TeamMember extends React.Component {
               </div>{" "}
               <div className="col-md-6 col-sm-6 col-12">
                 <div className="section-heading mt-40">
-                  <h5> Professional Skills </h5>{" "}
+                  <h5> {skills} </h5>{" "}
                   <div className="section-heading-line-left"> </div>{" "}
                 </div>{" "}
                 <div className="mt-3">
                   <div className="progress-item">
                     <div className="progress-title">
                       <h6>
-                        Web Development{" "}
+                        {subSkills1}{" "}
                         <span className="float-right">
-                          <span className="progress-number"> 60 </span>%{" "}
+                          <span className="progress-number">
+                            {" "}
+                            {subSkills1Value}{" "}
+                          </span>{" "}
                         </span>{" "}
                       </h6>{" "}
                     </div>{" "}
@@ -195,9 +199,12 @@ class TeamMember extends React.Component {
                   <div className="progress-item">
                     <div className="progress-title">
                       <h6>
-                        User Experience{" "}
+                        {subSkills2}{" "}
                         <span className="float-right">
-                          <span className="progress-number"> 80 </span>%{" "}
+                          <span className="progress-number">
+                            {" "}
+                            {subSkills2Value}{" "}
+                          </span>{" "}
                         </span>{" "}
                       </h6>{" "}
                     </div>{" "}
@@ -214,9 +221,12 @@ class TeamMember extends React.Component {
                   <div className="progress-item">
                     <div className="progress-title">
                       <h6>
-                        Front-End Framework{" "}
+                        {subSkills3}{" "}
                         <span className="float-right">
-                          <span className="progress-number"> 50 </span>%{" "}
+                          <span className="progress-number">
+                            {" "}
+                            {subSkills3Value}{" "}
+                          </span>{" "}
                         </span>{" "}
                       </h6>{" "}
                     </div>{" "}
