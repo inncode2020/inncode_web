@@ -36,17 +36,24 @@ class HeroSection extends React.Component {
     this.setState(stateValue);
   }
 
+  isValidEmail = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  };
+
   isFormDirty = () => {
     const { name, email, subject, message, isAgreed } = this.state;
     if (
-      name === "" ||
-      email === "" ||
-      subject === "" ||
-      message === "" ||
+      name.length > 6 ||
+      this.isValidEmail(email) ||
+      subject.length > 6 ||
+      message.length > 10 ||
       isAgreed === false
     ) {
       return true;
     }
+
+    // this.showError = () => {};
     return false;
   };
 

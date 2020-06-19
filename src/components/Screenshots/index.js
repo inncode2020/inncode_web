@@ -1,5 +1,6 @@
 import React from "react";
 import _data from "../../data";
+const img = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 export default class Screenshots extends React.Component {
   constructor(props) {
@@ -31,88 +32,30 @@ export default class Screenshots extends React.Component {
               <div className="col-md-8">
                 <div className="section-heading text-center">
                   <h2>
-                    App screenshots <br /> <span> Looks awesome </span>{" "}
-                  </h2>{" "}
+                    App screenshots <br /> <span> Looks awesome </span>
+                  </h2>
                   <p className="lead">
                     Credibly synthesize multimedia based networks vis-a-vis
                     top-line growth strategies.Continually leverage existing
-                    worldwide interfaces{" "}
-                  </p>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
+                    worldwide interfaces
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="screen-slider-content mt-5">
-              <div className="screenshot-frame"> </div>{" "}
+              <div className="screenshot-frame"> </div>
               <div className="screen-carousel owl-carousel owl-theme dot-indicator">
-                <img
-                  src="img/SS-1.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-2.jpg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-3.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-4.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-5.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-6.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-7.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-8.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-9.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-10.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-11.jpeg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-12.jpg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-                <img
-                  src="img/SS-13.jpg"
-                  className="img-fluid"
-                  alt="screenshots"
-                />
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </section>{" "}
+                {img.map((item, index) => (
+                  <img
+                    src={`img/SS-${index + 1}.jpeg`}
+                    className="img-fluid"
+                    alt="screenshots"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
       </React.Fragment>
     );
   }

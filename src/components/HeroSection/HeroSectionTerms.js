@@ -37,7 +37,7 @@ class HeroSection extends React.Component {
                   <div className="custom-breadcrumb">
                     <ol className="breadcrumb d-inline-block bg-transparent list-inline py-0">
                       <li className="list-inline-item breadcrumb-item">
-                        <Link to="/"> Home </Link>
+                        <a href="/"> Home </a>
                       </li>
                       <li className="list-inline-item breadcrumb-item active">
                         Terms

@@ -17,14 +17,14 @@ class Header extends React.Component {
             }
           >
             <div className="container">
-              <Link to="/" className="navbar-brand">
+              <a href="/" className="navbar-brand">
                 <img
                   src="img/logo-white-1x.png"
                   width="120"
                   alt="logo"
                   className="img-fluid"
                 />
-              </Link>
+              </a>
               <button
                 className="navbar-toggler"
                 type="button"
