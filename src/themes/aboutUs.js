@@ -7,7 +7,7 @@ import ContactSection from "../components/Contact";
 import TrustedCompany from "../components/TrustedCompany/TrustedCompany";
 import SubscribeSection from "../components/Subscribe";
 import FooterSection from "../components/Footer";
-import About from "../components/AboutUs";
+// import About from "../components/AboutUs";
 
 class AboutUs extends Component {
   render() {
@@ -16,7 +16,7 @@ class AboutUs extends Component {
         <Header />
         <div className="main">
           <HeroSection />
-          <About />
+          {/* <About /> */}
           <TeamSection />
         </div>
         <SubscribeSection />
