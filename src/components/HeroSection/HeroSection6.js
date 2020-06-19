@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getQuote } from "../../actions/index";
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import Service from "../../services";
 
 class HeroSection extends React.Component {
   constructor(props) {
@@ -16,16 +16,14 @@ class HeroSection extends React.Component {
       subject: "",
       message: "",
       isAgreed: false,
-      disableBtn: false,
-      btnText: "Send"
+      disableBtn: true,
+      btnText: "Send",
     };
-
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  changeBtnText = btnText => {
+  changeBtnText = (btnText) => {
     this.setState({
-      btnText
+      btnText,
     });
   };
 
@@ -38,49 +36,37 @@ class HeroSection extends React.Component {
     this.setState(stateValue);
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
+  isFormDirty = () => {
+    const { name, email, subject, message, isAgreed } = this.state;
+    if (
+      name === "" ||
+      email === "" ||
+      subject === "" ||
+      message === "" ||
+      isAgreed === false
+    ) {
+      return true;
+    }
+    return false;
+  };
 
-    // disable the button
-    this.setState({
-      disableBtn: true
-    });
-
-    // // get action
-    const quoteAction = getQuote(this.state);
-
-    // // Dispatch the contact from data
-    this.props.dispatch(quoteAction);
-
-    // // added delay to change button text to previous
-    setTimeout(
-      function () {
-        // enable the button
-        this.setState({
-          disableBtn: false
-        });
-
-        // change to button name
-        this.changeBtnText("Send");
-
-        // get action again to update state
-        const quoteAction = getQuote(this.state);
-
-        // Dispatch the contact from data
-        this.props.dispatch(quoteAction);
-
-        // clear form data
-        this.setState({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-          isAgreed: false
-        });
-      }.bind(this),
-      3000
-    );
-  }
+  handleForm = () => {
+    const {
+      name,
+      email,
+      subject,
+      message: project_description,
+      isAgreed,
+    } = this.state;
+    const obj = { name, email, subject, project_description, isAgreed };
+    if (!this.isFormDirty()) {
+      this.setState({ btnText: "Sending..." });
+      const resp = Service.Inncode.PostProject(obj);
+      if (resp) {
+        this.setState({ btnText: "Sent" });
+      }
+    }
+  };
 
   componentDidMount() {
     /**
@@ -122,15 +108,11 @@ class HeroSection extends React.Component {
                     <h4 className="mb-0">Let's discuss your project</h4>
                     <p> Get response within 24 hours </p>
                   </div>
-                  <form
-                    method="post"
-                    className="sign-up-form"
-                    onSubmit={this.handleSubmit}
-                  >
+                  <form>
                     <div className="form-group input-group">
                       <input
                         value={this.state.name}
-                        onChange={e => this.handleFormValueChange("name", e)}
+                        onChange={(e) => this.handleFormValueChange("name", e)}
                         type="text"
                         name="name"
                         className="form-control"
@@ -141,7 +123,7 @@ class HeroSection extends React.Component {
                     <div className="form-group input-group">
                       <input
                         value={this.state.email}
-                        onChange={e => this.handleFormValueChange("email", e)}
+                        onChange={(e) => this.handleFormValueChange("email", e)}
                         type="email"
                         name="email"
                         className="form-control"
@@ -152,7 +134,9 @@ class HeroSection extends React.Component {
                     <div className="form-group input-group">
                       <input
                         value={this.state.subject}
-                        onChange={e => this.handleFormValueChange("subject", e)}
+                        onChange={(e) =>
+                          this.handleFormValueChange("subject", e)
+                        }
                         type="text"
                         name="subject"
                         className="form-control"
@@ -162,7 +146,9 @@ class HeroSection extends React.Component {
                     </div>
                     <div className="form-group input-group">
                       <textarea
-                        onChange={e => this.handleFormValueChange("message", e)}
+                        onChange={(e) =>
+                          this.handleFormValueChange("message", e)
+                        }
                         value={this.state.message}
                         name="message"
                         id="msg"
@@ -175,11 +161,8 @@ class HeroSection extends React.Component {
                     </div>
                     <div className="form-group">
                       <input
-                        onClick={() => {
-                          this.changeBtnText("Sending...");
-                        }}
-                        disabled={this.state.disableBtn}
-                        type="submit"
+                        onClick={() => this.handleForm()}
+                        type="button"
                         name="submit"
                         id="submit"
                         className="btn solid-btn btn-block"
@@ -189,7 +172,7 @@ class HeroSection extends React.Component {
                     <div className="form-check d-flex align-items-center text-center">
                       <input
                         checked={this.state.isAgreed}
-                        onChange={e =>
+                        onChange={(e) =>
                           this.handleFormValueChange("isAgreed", e)
                         }
                         type="checkbox"
@@ -198,7 +181,8 @@ class HeroSection extends React.Component {
                         id="ckbAgree"
                       />
                       <label className="form-check-label" htmlFor="ckbAgree">
-                        I agree your <Link to="/#"> terms & conditions </Link>
+                        I agree your{" "}
+                        <Link to="/terms"> terms & conditions </Link>
                       </label>
                     </div>
                   </form>
@@ -215,6 +199,6 @@ class HeroSection extends React.Component {
   }
 }
 
-export default connect(state => ({
-  state
+export default connect((state) => ({
+  state,
 }))(HeroSection);
