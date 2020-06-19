@@ -103,11 +103,10 @@ class About extends React.Component {
                 <div className="col-md-5">
                   <div className="about-content-right d-flex justify-content-center justify-content-lg-end justify-content-md-end">
                     <img
-                      src="img/image-11.png"
+                      src="https://www.ganeshawebtech.com/wp-content/uploads/2020/01/react-js-development-company-in-usa.png"
                       alt="about us"
                       className="img-fluid"
                     />
-                    
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
