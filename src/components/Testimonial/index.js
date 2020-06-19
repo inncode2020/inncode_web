@@ -46,7 +46,7 @@ class Testimonial extends Component {
                     <ul className="list-inline">
                       <li className="list-inline-item">
                         <img
-                          src="img/client-1-color.png"
+                          src="img/travel-cruise.jpg"
                           width="85"
                           alt="client"
                           className="img-fluid"
@@ -54,7 +54,7 @@ class Testimonial extends Component {
                       </li>{" "}
                       <li className="list-inline-item">
                         <img
-                          src="img/client-6-color.png"
+                          src="img/fillurbasket.jpg"
                           width="85"
                           alt="client"
                           className="img-fluid"
@@ -62,7 +62,7 @@ class Testimonial extends Component {
                       </li>{" "}
                       <li className="list-inline-item">
                         <img
-                          src="img/client-3-color.png"
+                          src="img/gurukwool-logo.jpeg"
                           width="85"
                           alt="client"
                           className="img-fluid"

@@ -44,12 +44,66 @@ export default class Screenshots extends React.Component {
             <div className="screen-slider-content mt-5">
               <div className="screenshot-frame"> </div>{" "}
               <div className="screen-carousel owl-carousel owl-theme dot-indicator">
-                <img src="img/01.png" className="img-fluid" alt="screenshots" />
-                <img src="img/02.png" className="img-fluid" alt="screenshots" />
-                <img src="img/03.png" className="img-fluid" alt="screenshots" />
-                <img src="img/04.png" className="img-fluid" alt="screenshots" />
-                <img src="img/05.png" className="img-fluid" alt="screenshots" />
-                <img src="img/06.png" className="img-fluid" alt="screenshots" />
+                <img
+                  src="img/SS-1.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-3.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-4.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-5.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-6.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-7.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-8.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-9.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-10.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-11.jpeg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-12.jpg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
+                  src="img/SS-13.jpg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
               </div>{" "}
             </div>{" "}
           </div>{" "}
