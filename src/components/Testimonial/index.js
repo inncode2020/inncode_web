@@ -68,6 +68,14 @@ class Testimonial extends Component {
                           className="img-fluid"
                         />
                       </li>{" "}
+                      <li className="list-inline-item">
+                        <img
+                          src="img/Paws2Junction.jpg"
+                          width="85"
+                          alt="client"
+                          className="img-fluid"
+                        />
+                      </li>{" "}
                     </ul>{" "}
                   </div>{" "}
                 </div>{" "}

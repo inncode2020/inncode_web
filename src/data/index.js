@@ -170,16 +170,10 @@ module.exports = {
     description:
       'Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business. Conveniently innovate compelling internal.',
     companies: [
-      "img/client-5-color.png",
-      "img/client-1-color.png",
-      "img/client-6-color.png",
-      "img/client-3-color.png",
-      "img/client-4-color.png",
-      "img/client-5-color.png",
-      "img/client-7-color.png",
-      "img/client-2-color.png",
-      "img/client-1-color.png",
-      "img/client-3-color.png",
+      "img/gurukwool-logo.jpeg",
+      "img/fillurbasket.jpg",
+      "img/travel-cruise.jpg",
+      "img/Paws2Junction.jpg",
     ],
   },
   teamMember: {

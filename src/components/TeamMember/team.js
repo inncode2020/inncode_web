@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react'
-import { withRouter } from 'react-router-dom'
-import _data from '../../data'
-import { Link } from 'react-router-dom'
-import Team from './Team.json'
+import React, { Fragment } from "react";
+import { withRouter } from "react-router-dom";
+import _data from "../../data";
+import { Link } from "react-router-dom";
+import Team from "./Team.json";
 
 class TeamMember extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       teamMember: {},
-    }
+    };
   }
 
   componentDidMount() {
@@ -18,7 +18,7 @@ class TeamMember extends React.Component {
      */
     this.setState({
       teamMember: _data.teamMember,
-    })
+    });
   }
 
   render() {
@@ -26,9 +26,9 @@ class TeamMember extends React.Component {
       <React.Fragment>
         <section className="team-member-section ptb-100">
           <div className="container">
-            <div className="row justify-conte nt-center">
+            <div className="row justify-content-center">
               <div className="col-lg-7 col-md-8">
-                <div className="section-heading text-center mb-4">
+                <div className="section-heading text-center mb-5">
                   <h2> Meet Our team members </h2>
                   <p className="lead">
                     Following reasons show advantages of adding Inncode to your
@@ -39,13 +39,13 @@ class TeamMember extends React.Component {
             </div>
             <div className="row">
               {Team.data.map((item, index) => (
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="single-team-member position-relative my-lg-3 my-md-3 my-sm-0">
-                    <div className="team-image team-list-image">
+                <div className="col-lg-3 col-sm-6">
+                  <div className="single-team-member position-relative">
+                    <div className="team-image">
                       <img
                         src={`img/team-${index + 1}.jpeg`}
                         alt="Team Members"
-                        className="img-fluid rounded"
+                        className="img-fluid rounded-circle"
                       />
                     </div>
 
@@ -77,7 +77,7 @@ class TeamMember extends React.Component {
                       <button
                         onClick={() =>
                           this.props.history.push({
-                            pathname: '/singleTeam',
+                            pathname: "/singleTeam",
                             state: {
                               item,
                             },
@@ -316,8 +316,8 @@ class TeamMember extends React.Component {
           </div>
         </section>
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default withRouter(TeamMember)
+export default withRouter(TeamMember);
