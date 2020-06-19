@@ -50,6 +50,11 @@ export default class Screenshots extends React.Component {
                   alt="screenshots"
                 />
                 <img
+                  src="img/SS-2.jpg"
+                  className="img-fluid"
+                  alt="screenshots"
+                />
+                <img
                   src="img/SS-3.jpeg"
                   className="img-fluid"
                   alt="screenshots"
