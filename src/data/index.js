@@ -65,7 +65,7 @@ module.exports = {
       {
         price: "10k-25k",
         license: "Basic",
-        isFeatured: true,
+        isFeatured: false,
         features: [
           // "Push Notifications",
           "Unmetered Bandwidth",
@@ -86,7 +86,7 @@ module.exports = {
       {
         price: "25k-50k",
         license: "Popular",
-        isFeatured: false,
+        isFeatured: true,
         features: [
           // "Push Notifications",
           "Unmetered Bandwidth",
@@ -105,9 +105,10 @@ module.exports = {
         ],
       },
       {
-        price: "50k < ",
+        price: "50k or Above",
         license: "Extended",
         isFeatured: false,
+        priceVariation: "*Price may vary as per Design",
         features: [
           // "Push Notifications",
           "Unmetered Bandwidth",
@@ -189,7 +190,7 @@ module.exports = {
   trustedCompanyAboutUs: {
     title: "Trusted by companies",
     description:
-      'Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business. Conveniently innovate compelling internal.',
+      "Trust is the glue of life. It’s the most essential ingredient in effective communication. It’s the foundational principle that holds all our worthy relationships with our clients",
     companies: [
       "img/gurukwool-logo.jpeg",
       "img/fillurbasket.jpg",

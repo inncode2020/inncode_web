@@ -102,6 +102,9 @@ export default class Pricing extends React.Component {
                           >
                             Purchase now{" "}
                           </Link>{" "}
+                          <div className="pricing-body">
+                            {_package.priceVariation}
+                          </div>
                         </div>{" "}
                       </div>{" "}
                     </div>

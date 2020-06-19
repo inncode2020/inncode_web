@@ -54,7 +54,7 @@ class Pricing extends React.Component {
                             {_package.price}{" "}
                           </span>{" "}
                         </div>{" "}
-                        <span
+                        {/* <span
                           className={
                             "h6 " +
                             (_package.isFeatured
@@ -65,7 +65,7 @@ class Pricing extends React.Component {
                           {" "}
                           {_package.license}
                           License{" "}
-                        </span>{" "}
+                        </span>{" "} */}
                       </div>{" "}
                       <div className="card-body">
                         <ul
@@ -91,6 +91,9 @@ class Pricing extends React.Component {
                         >
                           Purchase now{" "}
                         </Link>{" "}
+                        <div className="pricing-body">
+                          {_package.priceVariation}
+                        </div>
                       </div>{" "}
                     </div>{" "}
                   </div>

@@ -32,12 +32,11 @@ export default class Screenshots extends React.Component {
               <div className="col-md-8">
                 <div className="section-heading text-center">
                   <h2>
-                    App screenshots <br /> <span> Looks awesome </span>
+                    SnapShots <br /> <span> Looks awesome </span>
                   </h2>
                   <p className="lead">
-                    Credibly synthesize multimedia based networks vis-a-vis
-                    top-line growth strategies.Continually leverage existing
-                    worldwide interfaces
+                    We understand how a first impression is often just that: a
+                    quick snapshot that, on its own merit, is meaningless.
                   </p>
                 </div>
               </div>
