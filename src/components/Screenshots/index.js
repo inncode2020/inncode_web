@@ -32,12 +32,11 @@ export default class Screenshots extends React.Component {
               <div className="col-md-8">
                 <div className="section-heading text-center">
                   <h2>
-                    App screenshots <br /> <span> Looks awesome </span>
+                    SnapShots <br /> <span> Looks awesome </span>
                   </h2>
                   <p className="lead">
-                    Credibly synthesize multimedia based networks vis-a-vis
-                    top-line growth strategies.Continually leverage existing
-                    worldwide interfaces
+                    We understand how a first impression is often just that: a
+                    quick snapshot that, on its own merit, is meaningless.
                   </p>
                 </div>
               </div>
@@ -47,6 +46,7 @@ export default class Screenshots extends React.Component {
               <div className="screen-carousel owl-carousel owl-theme dot-indicator">
                 {img.map((item, index) => (
                   <img
+                    key={"key" + index}
                     src={`img/SS-${index + 1}.jpeg`}
                     className="img-fluid"
                     alt="screenshots"

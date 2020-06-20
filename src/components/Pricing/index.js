@@ -37,25 +37,23 @@ export default class Pricing extends React.Component {
               <div className="row justify-content-center">
                 <div className="col-md-8">
                   <div className="section-heading text-center mb-5">
-                    {" "}
                     {this.props.showTitle && this.props.showTitle === true && (
                       <span className="badge badge-primary badge-pill">
-                        Our Pricing Package{" "}
+                        Our Pricing Package
                       </span>
-                    )}{" "}
+                    )}
                     <h2>
                       Afforadble Pricing and Packages <br />
-                      <span> choose your best one </span>{" "}
-                    </h2>{" "}
+                      <span> choose your best one </span>
+                    </h2>
                     <p className="lead">
                       Monotonectally grow strategic process improvements
-                      vis-a-vis integrated resources.{" "}
-                    </p>{" "}
-                  </div>{" "}
-                </div>{" "}
-              </div>{" "}
+                      vis-a-vis integrated resources.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div className="row justify-content-center">
-                {" "}
                 {(this.state.price.packages || []).map((_package, index) => {
                   return (
                     <div className="col-lg-4 col-md" key={index}>
@@ -64,32 +62,39 @@ export default class Pricing extends React.Component {
                           "card text-center single-pricing-pack " +
                           (_package.isFeatured ? "popular-price" : "")
                         }
+                        data-id="5"
                       >
-                        <div className="pt-4">
-                          <h5> {_package.license} </h5>{" "}
-                        </div>{" "}
                         <div className="pricing-img mt-4">
                           <img
                             src="img/basic.svg"
                             alt="pricing img"
                             className="img-fluid"
                           />
-                        </div>{" "}
+                        </div>
                         <div className="card-header py-4 border-0 pricing-header">
                           <div className="h1 text-center mb-0">
                             <span className="price font-weight-bolder">
-                              {" "}
-                              {_package.price}{" "}
-                            </span>{" "}
-                          </div>{" "}
-                        </div>{" "}
+                              {_package.price}
+                            </span>
+                          </div>
+                        </div>
                         <div className="card-body">
                           <ul className="list-unstyled text-sm mb-4 pricing-feature-list">
-                            {" "}
                             {(_package.features || []).map((feature) => {
-                              return <li key={feature}> {feature} </li>;
-                            })}{" "}
-                          </ul>{" "}
+                              return (
+                                <li
+                                  key={feature.value}
+                                  className={
+                                    feature.isProvided === true
+                                      ? ""
+                                      : "line-through"
+                                  }
+                                >
+                                  {feature.value}
+                                </li>
+                              );
+                            })}
+                          </ul>
                           <Link
                             to="/#"
                             className={
@@ -100,23 +105,26 @@ export default class Pricing extends React.Component {
                             }
                             target="_blank"
                           >
-                            Purchase now{" "}
-                          </Link>{" "}
-                        </div>{" "}
-                      </div>{" "}
+                            Purchase now
+                          </Link>
+                          <div className="pricing-body">
+                            {_package.priceVariation}
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   );
-                })}{" "}
-              </div>{" "}
+                })}
+              </div>
               <div className="mt-5 text-center">
                 <p className="mb-2">
-                  If you need custom services or Need more ?{" "}
-                  {/* <a className="color-secondary">Contact us </a>{" "} */}
+                  If you need custom services or Need more ?
+                  {/* <a className="color-secondary">Contact us </a> */}
                   <Link to="/Contact" className="color-secondary">
                     Contact us
-                  </Link>{" "}
-                </p>{" "}
-              </div>{" "}
+                  </Link>
+                </p>
+              </div>
               {!(this.props.hideFaq && this.props.hideFaq === true) &&
                 this.props.theme !== "four" && (
                   <div className="row mt-5">
@@ -135,8 +143,8 @@ export default class Pricing extends React.Component {
                             <h6 className="mb-0">
                               <span className="ti-receipt mr-3"> </span> Which
                               license do I need ?
-                            </h6>{" "}
-                          </div>{" "}
+                            </h6>
+                          </div>
                           <div
                             id="collapse-1-1"
                             className="collapse"
@@ -148,11 +156,11 @@ export default class Pricing extends React.Component {
                                 Uniquely leverage other 's distinctive
                                 infomediaries rather than leveraged supply
                                 chains.Continually seize distributed
-                                collaboration and idea-sharing whereas user.{" "}
-                              </p>{" "}
-                            </div>{" "}
-                          </div>{" "}
-                        </div>{" "}
+                                collaboration and idea-sharing whereas user.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                         <div className="card">
                           <div
                             className="card-header py-4"
@@ -166,8 +174,8 @@ export default class Pricing extends React.Component {
                             <h6 className="mb-0">
                               <span className="ti-gallery mr-3"> </span> How do
                               I get access to a theme ?
-                            </h6>{" "}
-                          </div>{" "}
+                            </h6>
+                          </div>
                           <div
                             id="collapse-1-2"
                             className="collapse"
@@ -179,11 +187,11 @@ export default class Pricing extends React.Component {
                                 Rapidiously incentivize virtual e-commerce and
                                 exceptional e-tailers.Progressively network
                                 focused catalysts for change without orthogonal
-                                benefits.Dramatically empower.{" "}
-                              </p>{" "}
-                            </div>{" "}
-                          </div>{" "}
-                        </div>{" "}
+                                benefits.Dramatically empower.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                         <div className="card">
                           <div
                             className="card-header py-4"
@@ -197,8 +205,8 @@ export default class Pricing extends React.Component {
                             <h6 className="mb-0">
                               <span className="ti-wallet mr-3"> </span> How do I
                               see previous orders ?
-                            </h6>{" "}
-                          </div>{" "}
+                            </h6>
+                          </div>
                           <div
                             id="collapse-1-3"
                             className="collapse"
@@ -212,13 +220,13 @@ export default class Pricing extends React.Component {
                                 relationships.Dynamically mesh
                                 principle-centered functionalities before
                                 next-generation best practices.Distinctively
-                                empower.{" "}
-                              </p>{" "}
-                            </div>{" "}
-                          </div>{" "}
-                        </div>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                                empower.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div className="col-lg-6">
                       <div id="accordion-2" className="accordion accordion-faq">
                         <div className="card">
@@ -234,8 +242,8 @@ export default class Pricing extends React.Component {
                             <h6 className="mb-0">
                               <span className="ti-receipt mr-3"> </span> Which
                               license do I need ?
-                            </h6>{" "}
-                          </div>{" "}
+                            </h6>
+                          </div>
                           <div
                             id="collapse-2-1"
                             className="collapse"
@@ -248,11 +256,11 @@ export default class Pricing extends React.Component {
                                 channels before installed base
                                 communities.Continually disintermediate
                                 distinctive web services vis-a-vis team building
-                                e-commerce.{" "}
-                              </p>{" "}
-                            </div>{" "}
-                          </div>{" "}
-                        </div>{" "}
+                                e-commerce.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                         <div className="card">
                           <div
                             className="card-header py-4"
@@ -266,8 +274,8 @@ export default class Pricing extends React.Component {
                             <h6 className="mb-0">
                               <span className="ti-lock mr-3"> </span> How do I
                               get access to a theme ?
-                            </h6>{" "}
-                          </div>{" "}
+                            </h6>
+                          </div>
                           <div
                             id="collapse-2-2"
                             className="collapse"
@@ -279,11 +287,11 @@ export default class Pricing extends React.Component {
                                 Quickly recaptiualize revolutionary
                                 meta-services and multimedia based
                                 channels.Seamlessly impact diverse deliverables
-                                rather than cooperative strategic theme areas.{" "}
-                              </p>{" "}
-                            </div>{" "}
-                          </div>{" "}
-                        </div>{" "}
+                                rather than cooperative strategic theme areas.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                         <div className="card">
                           <div
                             className="card-header py-4"
@@ -297,8 +305,8 @@ export default class Pricing extends React.Component {
                             <h6 className="mb-0">
                               <span className="ti-widget mr-3"> </span> How do I
                               see previous orders ?
-                            </h6>{" "}
-                          </div>{" "}
+                            </h6>
+                          </div>
                           <div
                             id="collapse-2-3"
                             className="collapse"
@@ -310,13 +318,13 @@ export default class Pricing extends React.Component {
                                 Efficiently supply B2B networks vis-a-vis
                                 best-of -breed schemas.Dramatically parallel
                                 task reliable technology with cross functional
-                                core competencies.Phosfluorescently.{" "}
-                              </p>{" "}
-                            </div>{" "}
-                          </div>{" "}
-                        </div>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                                core competencies.Phosfluorescently.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 )}
               {!(this.props.hideFaq && this.props.hideFaq === true) &&
@@ -324,76 +332,76 @@ export default class Pricing extends React.Component {
                   <div className="row pt-5">
                     <div className="col-md-6">
                       <div className="single-faq">
-                        <h5> How can I pay for this ? </h5>{" "}
+                        <h5> How can I pay for this ? </h5>
                         <p>
                           Intrinsicly implement high standards in strategic
                           theme areas via inexpensive solutions.Assertively
                           conceptualize prospective bandwidth whereas
-                          client-based imperatives.{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                          client-based imperatives.
+                        </p>
+                      </div>
+                    </div>
                     <div className="col-md-6">
                       <div className="single-faq">
-                        <h5> Is it possible to pay yearly ? </h5>{" "}
+                        <h5> Is it possible to pay yearly ? </h5>
                         <p>
                           Assertively iterate user friendly innovation without
                           open-source markets.Monotonectally extend resource
                           sucking manufactured products without high-payoff
                           paradigms.Objectively customize ubiquitous information
-                          before economically sound relationships.{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                          before economically sound relationships.
+                        </p>
+                      </div>
+                    </div>
                     <div className="col-md-6">
                       <div className="single-faq">
-                        <h5> Do you offer discounts on multiple items ? </h5>{" "}
+                        <h5> Do you offer discounts on multiple items ? </h5>
                         <p>
                           Dramatically target focused testing procedures after
                           holistic ideas.Collaboratively maximize high-payoff
                           ROI and value-added products.Distinctively deliver
                           cooperative collaboration and idea-sharing whereas
-                          customized{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                          customized
+                        </p>
+                      </div>
+                    </div>
                     <div className="col-md-6">
                       <div className="single-faq">
-                        <h5> Is VAT included in plan prices ? </h5>{" "}
+                        <h5> Is VAT included in plan prices ? </h5>
                         <p>
                           Distinctively simplify high-quality initiatives for
                           highly efficient applications.Monotonectally repurpose
-                          integrated customer service after magnetic e-services.{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                          integrated customer service after magnetic e-services.
+                        </p>
+                      </div>
+                    </div>
                     <div className="col-md-6">
                       <div className="single-faq">
-                        <h5> Will I pay more for some features ? </h5>{" "}
+                        <h5> Will I pay more for some features ? </h5>
                         <p>
                           Enthusiastically pontificate resource-leveling supply
                           chains whereas scalable markets.Authoritatively
-                          streamline resource maximizing methods of empowerment{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                          streamline resource maximizing methods of empowerment
+                        </p>
+                      </div>
+                    </div>
                     <div className="col-md-6">
                       <div className="single-faq">
                         <h5>
                           Why are there no limits on the number of messages ?
-                        </h5>{" "}
+                        </h5>
                         <p>
                           Assertively target turnkey ideas for market-driven
                           portals.Appropriately e-enable world-class
-                          intellectual capital whereas 2.0 mindshare.{" "}
-                        </p>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                          intellectual capital whereas 2.0 mindshare.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                )}{" "}
-            </div>{" "}
-          </section>{" "}
-        </div>{" "}
+                )}
+            </div>
+          </section>
+        </div>
       </React.Fragment>
     );
   }

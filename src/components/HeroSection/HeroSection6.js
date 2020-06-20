@@ -21,6 +21,16 @@ class HeroSection extends React.Component {
     };
   }
 
+  resetForm = () => {
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      isAgreed: false,
+    });
+  };
+
   changeBtnText = (btnText) => {
     this.setState({
       btnText,
@@ -44,20 +54,61 @@ class HeroSection extends React.Component {
   isFormDirty = () => {
     const { name, email, subject, message, isAgreed } = this.state;
     if (
-      name.length > 6 ||
-      this.isValidEmail(email) ||
+      name.length > 3 ||
+      !this.isValidEmail(email) ||
       subject.length > 6 ||
       message.length > 10 ||
-      isAgreed === false
+      isAgreed === true
     ) {
+      this.showError();
       return true;
     }
 
-    // this.showError = () => {};
     return false;
   };
 
+  showError = () => {
+    const { name, email, subject, message, isAgreed } = this.state;
+
+    if (name.length < 4) {
+      this.markError("proj-name");
+    }
+
+    if (!this.isValidEmail(email)) {
+      this.markError("proj-email");
+    }
+
+    if (subject.length < 6) {
+      this.markError("proj-subject");
+    }
+
+    if (message.length < 6) {
+      this.markError("proj-message");
+    }
+
+    if (isAgreed !== true) {
+      this.markError("proj-isAgreed");
+    }
+  };
+
+  markError = (id) => {
+    if (document.getElementById(id))
+      document.getElementById(id).classList.add("error-input");
+  };
+
+  removeError = (id) => {
+    if (document.getElementById(id))
+      document.getElementById(id).classList.remove("error-input");
+  };
+
   handleForm = () => {
+    [
+      "proj-name",
+      "proj-email",
+      "proj-subject",
+      "proj-message",
+      "proj-isAgreed",
+    ].map((item) => this.removeError(item));
     const {
       name,
       email,
@@ -71,6 +122,7 @@ class HeroSection extends React.Component {
       const resp = Service.Inncode.PostProject(obj);
       if (resp) {
         this.setState({ btnText: "Sent" });
+        this.resetForm();
       }
     }
   };
@@ -122,6 +174,7 @@ class HeroSection extends React.Component {
                         onChange={(e) => this.handleFormValueChange("name", e)}
                         type="text"
                         name="name"
+                        id="proj-name"
                         className="form-control"
                         placeholder="Enter your name"
                         required
@@ -133,6 +186,7 @@ class HeroSection extends React.Component {
                         onChange={(e) => this.handleFormValueChange("email", e)}
                         type="email"
                         name="email"
+                        id="proj-email"
                         className="form-control"
                         placeholder="Enter your email"
                         required
@@ -146,6 +200,7 @@ class HeroSection extends React.Component {
                         }
                         type="text"
                         name="subject"
+                        id="proj-subject"
                         className="form-control"
                         placeholder="Enter subject"
                         required
@@ -158,7 +213,7 @@ class HeroSection extends React.Component {
                         }
                         value={this.state.message}
                         name="message"
-                        id="msg"
+                        id="proj-message"
                         className="form-control"
                         placeholder="Write us about any project. We’d love to work with you!"
                         cols="30"
@@ -184,8 +239,8 @@ class HeroSection extends React.Component {
                         }
                         type="checkbox"
                         name="isAgreed"
+                        id="proj-isAgreed"
                         className="form-check-input mt-0 mr-3"
-                        id="ckbAgree"
                       />
                       <label className="form-check-label" htmlFor="ckbAgree">
                         I agree your{" "}

@@ -36,7 +36,8 @@ jQuery(function ($) {
   // 4. magnify popup video
   $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
     disableOn: 700,
-    type: "iframe",
+    src: "img/logo-white-1x.png",
+    type: "image",
     mainClass: "mfp-fade",
     removalDelay: 160,
     preloader: false,
