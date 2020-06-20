@@ -140,7 +140,7 @@ class HeroSection extends React.Component {
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div className="col-md-6 col-lg-6">
-                <div className="hero-content-left position-relative mt-lg-0 mt-md-0 mt-5 text-web-primary">
+                <div className="hero-content-left position-relative mt-lg-0 mt-md-0 mt-5 text-web-primary mobile-margin-top">
                   <h1 className="text-web-primary">
                     <span> Build anything </span> That you want
                   </h1>
