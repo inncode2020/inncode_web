@@ -100,11 +100,11 @@ class Footer extends React.Component {
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-mobile mr-2"> </span>
-                        <Link to="tel:+61283766284"> +91 8210988275 </Link>
+                        <a href="tel:+918210988275"> +91 8210988275 </a>
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-email mr-2"> </span>
-                        <a href="mailto:mail@example.com">
+                        <a href="mailto:hello.inncodesolutions@gmail.com">
                           hello.inncodesolutions@gmail.com
                         </a>
                         {/* <Link to="mailto:mail@example.com">
@@ -113,7 +113,7 @@ class Footer extends React.Component {
                       </li>
                       <li className="mb-2 d-flex align-items-center">
                         <span className="ti-world mr-2"> </span>
-                        <Link to="/#"> www.inncodesolutions.com </Link>
+                        <Link to="/"> www.inncodesolutions.com </Link>
                       </li>
                     </ul>
                   </div>

@@ -152,9 +152,9 @@ class Contact extends Component {
                     <li>
                       <span>
                         Email:
-                        <Link to="mailto:hello@yourdomain.com">
+                        <a href={this.state.contact.email}>
                           {this.state.contact.email}
-                        </Link>
+                        </a>
                       </span>
                     </li>
                   </ul>
