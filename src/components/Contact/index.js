@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { submitContact } from "../../actions/index";
 import _data from "../../data";
-import {Link} from "react-router-dom";
-
-
+import { Link } from "react-router-dom";
 
 class Contact extends Component {
   constructor(props) {
@@ -94,6 +92,26 @@ class Contact extends Component {
     );
   }
 
+  isFormDirty = () => {
+    const { name, email, phone, company, message } = this.state;
+    if (
+      name.length > 3 ||
+      !this.isValidEmail(email) ||
+      phone.length > 10 ||
+      company.length !== "" ||
+      message.length > 10
+    ) {
+      this.showError();
+      return true;
+    }
+
+    return false;
+  };
+
+  showError = () => {
+    console.log("helo");
+  };
+
   componentDidMount() {
     /**
      * Your ajax will goes here to get data then call setState
@@ -119,30 +137,29 @@ class Contact extends Component {
             <div className="row">
               <div className="col-md-5">
                 <div className="section-heading">
-                  <h3> {this.state.contact.title} </h3>{" "}
-                  <p> {this.state.contact.description} </p>{" "}
-                </div>{" "}
+                  <h3> {this.state.contact.title} </h3>
+                  <p> {this.state.contact.description} </p>
+                </div>
                 <div className="footer-address">
                   <h6>
-                    <strong> {this.state.contact.office} </strong>{" "}
-                  </h6>{" "}
-                  <p> {this.state.contact.address} </p>{" "}
+                    <strong> {this.state.contact.office} </strong>
+                  </h6>
+                  <p> {this.state.contact.address} </p>
                   <ul>
                     <li>
-                      <span> Phone: {this.state.contact.phone} </span>{" "}
-                    </li>{" "}
+                      <span> Phone: {this.state.contact.phone} </span>
+                    </li>
                     <li>
                       <span>
-                        Email:{" "}
+                        Email:
                         <Link to="mailto:hello@yourdomain.com">
-                          {" "}
-                          {this.state.contact.email}{" "}
-                        </Link>{" "}
-                      </span>{" "}
-                    </li>{" "}
-                  </ul>{" "}
-                </div>{" "}
-              </div>{" "}
+                          {this.state.contact.email}
+                        </Link>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div className="col-md-7">
                 <form
                   method="POST"
@@ -150,7 +167,7 @@ class Contact extends Component {
                   className="contact-us-form"
                   onSubmit={this.handleSubmit}
                 >
-                  <h5> Reach us quickly </h5>{" "}
+                  <h5> Reach us quickly </h5>
                   <div className="row">
                     <div className="col-sm-6 col-12">
                       <div className="form-group">
@@ -165,8 +182,8 @@ class Contact extends Component {
                           placeholder="Enter name"
                           required="required"
                         />
-                      </div>{" "}
-                    </div>{" "}
+                      </div>
+                    </div>
                     <div className="col-sm-6 col-12">
                       <div className="form-group">
                         <input
@@ -180,9 +197,9 @@ class Contact extends Component {
                           placeholder="Enter email"
                           required="required"
                         />
-                      </div>{" "}
-                    </div>{" "}
-                  </div>{" "}
+                      </div>
+                    </div>
+                  </div>
                   <div className="row">
                     <div className="col-sm-6 col-12">
                       <div className="form-group">
@@ -197,8 +214,8 @@ class Contact extends Component {
                           id="phone"
                           placeholder="Your Phone"
                         />
-                      </div>{" "}
-                    </div>{" "}
+                      </div>
+                    </div>
                     <div className="col-sm-6 col-12">
                       <div className="form-group">
                         <input
@@ -213,9 +230,9 @@ class Contact extends Component {
                           id="company"
                           placeholder="Your Company"
                         />
-                      </div>{" "}
-                    </div>{" "}
-                  </div>{" "}
+                      </div>
+                    </div>
+                  </div>
                   <div className="row">
                     <div className="col-12">
                       <div className="form-group">
@@ -230,10 +247,10 @@ class Contact extends Component {
                           rows="7"
                           cols="25"
                           placeholder="Message"
-                        ></textarea>{" "}
-                      </div>{" "}
-                    </div>{" "}
-                  </div>{" "}
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
                   <div className="row">
                     <div className="col-sm-12 mt-3">
                       <button
@@ -245,16 +262,16 @@ class Contact extends Component {
                           this.changeBtnText("Sending...");
                         }}
                       >
-                        {this.state.contactBtnText}{" "}
-                      </button>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                </form>{" "}
-                <p className="form-message"> </p>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </section>{" "}
+                        {this.state.contactBtnText}
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <p className="form-message"> </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </React.Fragment>
     );
   }
