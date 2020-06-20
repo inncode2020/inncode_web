@@ -46,6 +46,7 @@ export default class Screenshots extends React.Component {
               <div className="screen-carousel owl-carousel owl-theme dot-indicator">
                 {img.map((item, index) => (
                   <img
+                    key={"key" + index}
                     src={`img/SS-${index + 1}.jpeg`}
                     className="img-fluid"
                     alt="screenshots"
