@@ -11,13 +11,11 @@ class Pricing extends React.Component {
   }
 
   componentDidMount() {
-    /**
-     * Your ajax will goes here to get data then call setState
-     */
     this.setState({
       price: _data.price,
     });
   }
+
   render() {
     return (
       <React.Fragment>
@@ -73,7 +71,9 @@ class Pricing extends React.Component {
                           }
                         >
                           {(_package.features || []).map((feature) => {
-                            return <li key={feature}> {feature} </li>;
+                            return (
+                              <li key={feature.value}> {feature.value} </li>
+                            );
                           })}
                         </ul>
                         <Link

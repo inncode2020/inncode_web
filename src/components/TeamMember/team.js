@@ -39,7 +39,7 @@ class TeamMember extends React.Component {
             </div>
             <div className="row">
               {Team.data.map((item, index) => (
-                <div className="col-lg-3 col-sm-6">
+                <div className="col-lg-3 col-sm-6" key={item.name}>
                   <div className="single-team-member position-relative">
                     <div className="team-image">
                       <img
