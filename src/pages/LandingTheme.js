@@ -1,35 +1,38 @@
 import React, { Component } from "react";
 
 import Header from "../components/Header/header";
-import HeroSection from "../components/HeroSection/HeroSection3";
+import LandingPage from "../components/HeroSection/LandingPage";
 import PromoSection from "../components/PromoSection";
-import AboutSection from "../components/AboutUs";
-import FeatureSection from "../components/Features/Feature3";
-import VideoSection from "../components/Video";
-import PricingSection from "../components/Pricing/Price3";
+import AboutSection from "../components/AboutUs/AboutUs";
+import FeatureSection from "../components/Features/Feature";
+import PricingSection from "../components/Pricing";
+import Testimonial from "../components/Testimonial";
 import Screenshots from "../components/Screenshots";
+import DownloadSection from "../components/Download";
 import TeamMember from "../components/TeamMember";
 import ContactSection from "../components/Contact";
 import TrustedCompany from "../components/TrustedCompany/TrustedCompany";
 import SubscribeSection from "../components/Subscribe";
 import FooterSection from "../components/Footer";
 
-class Theme extends Component {
+class LandingTheme extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header bgColor="white" />
+        <Header />
         <div className="main">
-          <HeroSection />
+          <LandingPage />
           <PromoSection />
           <AboutSection />
           <FeatureSection />
-          <VideoSection />
-          <PricingSection hideFaq={true} /> <Screenshots />
+          <PricingSection hideFaq={true} faq="four" bgColor="gray" />
+          <Testimonial />
+          <Screenshots />
+          <DownloadSection />
           <TeamMember />
           <ContactSection />
           <TrustedCompany />
-        </div>{" "}
+        </div>
         <SubscribeSection />
         <FooterSection />
       </React.Fragment>
@@ -37,4 +40,4 @@ class Theme extends Component {
   }
 }
 
-export default Theme;
+export default LandingTheme;

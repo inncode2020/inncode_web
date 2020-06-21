@@ -15,16 +15,23 @@ class Faq extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section className="promo-section ptb-100">
+        <section className="promo-section ptb-100 ps-faq">
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-9">
                 <div className="section-heading mb-5">
-                  <h2> Frequently Asked Questions </h2>
-                  <p className="lead">
-                    Quickly morph client-centric results through performance
-                    based applications.Proactively facilitate professional human
-                    capital for cutting-edge.
+                  <h2 className="text-white">
+                    What you need to know
+                    <span className="text-red"> ...</span>
+                  </h2>
+                  <p className="lead color-lead">
+                    Don't be afraid! We'll walk you through the entire process,
+                    hold your hand as much as you need, and help you through all
+                    the technical aspects that may seem scary. We work best with
+                    clients who leave the heavy lifting to us.
+                  </p>
+                  <p className="color-lead">
+                    You have questions and we are happy to answer...
                   </p>
                 </div>
               </div>
@@ -43,8 +50,8 @@ class Faq extends React.Component {
                       aria-controls="collapse-1-1"
                     >
                       <h6 className="mb-0">
-                        <span className="ti-receipt mr-3"> </span> Which license
-                        do I need ?
+                        <span className="ti-receipt mr-3"> </span> What Kind Of
+                        Technology Do You Support?
                       </h6>
                     </div>
                     <div
@@ -55,45 +62,14 @@ class Faq extends React.Component {
                     >
                       <div className="card-body">
                         <p>
-                          Uniquely leverage other 's distinctive infomediaries
-                          rather than leveraged supply chains.Continually seize
-                          distributed collaboration and idea-sharing whereas
-                          user.
+                          We are specialized in XHTML, CSS and extensive JS
+                          frameworks, but are very experienced with React,
+                          Angular, Python, JAVA, PHP, and others.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="card">
-                    <div
-                      className="card-header py-4"
-                      id="heading-1-2"
-                      data-toggle="collapse"
-                      role="button"
-                      data-target="#collapse-1-2"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-2"
-                    >
-                      <h6 className="mb-0">
-                        <span className="ti-gallery mr-3"> </span> How do I get
-                        access to a theme ?
-                      </h6>
-                    </div>
-                    <div
-                      id="collapse-1-2"
-                      className="collapse"
-                      aria-labelledby="heading-1-2"
-                      data-parent="#accordion-1"
-                    >
-                      <div className="card-body">
-                        <p>
-                          Rapidiously incentivize virtual e-commerce and
-                          exceptional e-tailers.Progressively network focused
-                          catalysts for change without orthogonal
-                          benefits.Dramatically empower.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+
                   <div className="card">
                     <div
                       className="card-header py-4"
@@ -105,8 +81,8 @@ class Faq extends React.Component {
                       aria-controls="collapse-1-3"
                     >
                       <h6 className="mb-0">
-                        <span className="ti-wallet mr-3"> </span> How do I see
-                        previous orders ?
+                        <span className="ti-wallet mr-3"> </span> Do you
+                        outsource your projects or send work overseas?
                       </h6>
                     </div>
                     <div
@@ -117,45 +93,8 @@ class Faq extends React.Component {
                     >
                       <div className="card-body">
                         <p>
-                          Proactively monetize long-term high-impact innovation
-                          and scalable relationships.Dynamically mesh
-                          principle-centered functionalities before
-                          next-generation best practices.Distinctively empower.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div id="accordion-2" className="accordion accordion-faq">
-                  <div className="card">
-                    <div
-                      className="card-header py-4"
-                      id="heading-2-1"
-                      data-toggle="collapse"
-                      role="button"
-                      data-target="#collapse-2-1"
-                      aria-expanded="false"
-                      aria-controls="collapse-2-1"
-                    >
-                      <h6 className="mb-0">
-                        <span className="ti-receipt mr-3"> </span> Which license
-                        do I need ?
-                      </h6>
-                    </div>
-                    <div
-                      id="collapse-2-1"
-                      className="collapse"
-                      aria-labelledby="heading-2-1"
-                      data-parent="#accordion-2"
-                    >
-                      <div className="card-body">
-                        <p>
-                          Distinctively recaptiualize customer directed channels
-                          before installed base communities.Continually
-                          disintermediate distinctive web services vis-a-vis
-                          team building e-commerce.
+                          No. All of our work is performed by our in-house team
+                          based in Jamshedpur and Gurgaon.
                         </p>
                       </div>
                     </div>
@@ -171,8 +110,9 @@ class Faq extends React.Component {
                       aria-controls="collapse-2-2"
                     >
                       <h6 className="mb-0">
-                        <span className="ti-lock mr-3"> </span> How do I get
-                        access to a theme ?
+                        <span className="ti-lock mr-3"> </span> I've received
+                        quotes that are much higher than your prices. Are you
+                        cutting corners to offer lower prices?
                       </h6>
                     </div>
                     <div
@@ -183,10 +123,81 @@ class Faq extends React.Component {
                     >
                       <div className="card-body">
                         <p>
-                          Quickly recaptiualize revolutionary meta-services and
-                          multimedia based channels.Seamlessly impact diverse
-                          deliverables rather than cooperative strategic theme
-                          areas.
+                          Websites come in all shapes and sizes, just like cars.
+                          You'll find quotes ranging from a few hundred dollars
+                          all the way up to hundreds of thousands of dollars.
+                          Our websites are designed to be the perfect balance of
+                          features and price for small businesses. We've been
+                          able to keep our prices low by reducing overhead and
+                          streamlining our process. Our finished product often
+                          exceeds the quality of agencies charging ten times
+                          more than us.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div id="accordion-2" className="accordion accordion-faq">
+                  <div className="card">
+                    <div
+                      className="card-header py-4"
+                      id="heading-1-2"
+                      data-toggle="collapse"
+                      role="button"
+                      data-target="#collapse-1-2"
+                      aria-expanded="false"
+                      aria-controls="collapse-1-2"
+                    >
+                      <h6 className="mb-0">
+                        <span className="ti-gallery mr-3"> </span> Can I See My
+                        Website While It's In Progress?
+                      </h6>
+                    </div>
+                    <div
+                      id="collapse-1-2"
+                      className="collapse"
+                      aria-labelledby="heading-1-2"
+                      data-parent="#accordion-1"
+                    >
+                      <div className="card-body">
+                        <p>
+                          Absolutely, we build your websites on development
+                          servers and during the development phase feel free to
+                          reach us with the feedback 🙏
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="card">
+                    <div
+                      className="card-header py-4"
+                      id="heading-2-1"
+                      data-toggle="collapse"
+                      role="button"
+                      data-target="#collapse-2-1"
+                      aria-expanded="false"
+                      aria-controls="collapse-2-1"
+                    >
+                      <h6 className="mb-0">
+                        <span className="ti-receipt mr-3"> </span>How long does
+                        it take to finish a website?
+                      </h6>
+                    </div>
+                    <div
+                      id="collapse-2-1"
+                      className="collapse"
+                      aria-labelledby="heading-2-1"
+                      data-parent="#accordion-2"
+                    >
+                      <div className="card-body">
+                        <p>
+                          Each project is different, but on average we have a
+                          website launched within 2 to 6 weeks. This timeline
+                          can be longer or shorter depending on how proactive
+                          you are with assets and revisions.
                         </p>
                       </div>
                     </div>
@@ -202,8 +213,8 @@ class Faq extends React.Component {
                       aria-controls="collapse-2-3"
                     >
                       <h6 className="mb-0">
-                        <span className="ti-widget mr-3"> </span> How do I see
-                        previous orders ?
+                        <span className="ti-widget mr-3"> </span> Are there any
+                        recurring costs involved with owning a website?
                       </h6>
                     </div>
                     <div
@@ -214,95 +225,14 @@ class Faq extends React.Component {
                     >
                       <div className="card-body">
                         <p>
-                          Efficiently supply B2B networks vis-a-vis best-of
-                          -breed schemas.Dramatically parallel task reliable
-                          technology with cross functional core
-                          competencies.Phosfluorescently.
+                          Yes. Many design companies won't mention recurring
+                          costs before starting your project. At a minimum,
+                          you'll need monthly web hosting and an annual domain
+                          name registration.
                         </p>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="gray-light-bg ptb-100">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-md-9 col-lg-8">
-                <div className="section-heading mb-5 text-center">
-                  <h2> Frequently Asked Questions </h2>
-                  <p className="lead">
-                    Quickly morph client-centric results through performance
-                    based applications.Proactively facilitate professional human
-                    capital for cutting-edge.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-6">
-                <div className="single-faq">
-                  <h5> How can I pay for this ? </h5>
-                  <p>
-                    Intrinsicly implement high standards in strategic theme
-                    areas via inexpensive solutions.Assertively conceptualize
-                    prospective bandwidth whereas client-based imperatives.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="single-faq">
-                  <h5> Is it possible to pay yearly ? </h5>
-                  <p>
-                    Assertively iterate user friendly innovation without
-                    open-source markets.Monotonectally extend resource sucking
-                    manufactured products without high-payoff
-                    paradigms.Objectively customize ubiquitous information
-                    before economically sound relationships.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="single-faq">
-                  <h5> Do you offer discounts on multiple items ? </h5>
-                  <p>
-                    Dramatically target focused testing procedures after
-                    holistic ideas.Collaboratively maximize high-payoff ROI and
-                    value-added products.Distinctively deliver cooperative
-                    collaboration and idea-sharing whereas customized
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="single-faq">
-                  <h5> Is VAT included in plan prices ? </h5>
-                  <p>
-                    Distinctively simplify high-quality initiatives for highly
-                    efficient applications.Monotonectally repurpose integrated
-                    customer service after magnetic e-services.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="single-faq">
-                  <h5> Will I pay more for some features ? </h5>
-                  <p>
-                    Enthusiastically pontificate resource-leveling supply chains
-                    whereas scalable markets.Authoritatively streamline resource
-                    maximizing methods of empowerment
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="single-faq">
-                  <h5> Why are there no limits on the number of messages ? </h5>
-                  <p>
-                    Assertively target turnkey ideas for market-driven
-                    portals.Appropriately e-enable world-class intellectual
-                    capital whereas 2.0 mindshare.
-                  </p>
                 </div>
               </div>
             </div>

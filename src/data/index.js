@@ -60,7 +60,7 @@ module.exports = {
   price: {
     title: "Pricing Packages",
     description:
-      "Uniquely maintain efficient expertise whereas cross functional deliverables. Continually leverage other's competitive mind share whereas enabled channels. ",
+      "Our flexible and easily accessible web design package pricing is just one of the many reasons why working with Inncode is so easy. ",
     packages: [
       {
         price: "10k-25k",
@@ -119,7 +119,6 @@ module.exports = {
           { isProvided: true, value: "Unlimited Customs Pages" },
           { isProvided: true, value: "Free SSL Certificate" },
           { isProvided: true, value: "Search & SEO Analytics" },
-
           { isProvided: true, value: "1 year technical support" },
         ],
       },
@@ -130,6 +129,13 @@ module.exports = {
     description:
       'Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business. Conveniently innovate compelling internal.',
     comments: [
+      {
+        name: "Payal",
+        company: "Gurukwool",
+        image: "img/Client-3.jpg",
+        comment:
+          "I am very pleased with the project done by InncodeSolutions, and especially their commitment for providing a quality solution when it meant going the extra mile to do so.",
+      },
       {
         name: "Dhananjay Kumar",
         company: "Travels4U",
@@ -145,13 +151,6 @@ module.exports = {
           "The team at Inncode Solutions is simply the best. What makes Inncoders so great is their attention to detail,  availability and most importantly, their knowledge and expertise to deliver on time and according to requirements.",
       },
       {
-        name: "Payal",
-        company: "Gurukwool",
-        image: "img/Client-3.jpg",
-        comment:
-          "I am very pleased with the project done by InncodeSolutions, and especially their commitment for providing a quality solution when it meant going the extra mile to do so.",
-      },
-      {
         name: "Sumit Singh",
         company: "Paws-Junction",
         image: "img/client-4.jpg",
@@ -161,7 +160,7 @@ module.exports = {
     ],
   },
   contact: {
-    title: "Contact with us",
+    title: "Start Getting Results",
     description:
       "It's very easy to get in touch with us. Just use the contact form or pay us a visit for a coffee at the office. Dynamically innovate competitive technology after an expanded array of leadership.",
 
@@ -171,9 +170,9 @@ module.exports = {
     email: "hello.inncodesolutions@gmail.com",
   },
   trustedCompany: [
+    "img/client-3-color.png",
     "img/client-1-color.png",
     "img/client-6-color.png",
-    "img/client-3-color.png",
     "img/client-4-color.png",
     "img/client-5-color.png",
   ],
@@ -185,7 +184,7 @@ module.exports = {
     "img/client-5-gray.png",
   ],
   trustedCompanyAboutUs: {
-    title: "Trusted by companies",
+    title: "Long term partnerships that yield amazing results.",
     description:
       "Trust is the glue of life. It’s the most essential ingredient in effective communication. It’s the foundational principle that holds all our worthy relationships with our clients",
     companies: [
@@ -199,27 +198,24 @@ module.exports = {
     members: [
       {
         name: "Aman Singh",
-        designation: "WEB DEVELOPER",
+        designation: "DEVELOPER",
         image: "img/team-1.jpeg",
       },
       {
         name: "Shubham Singh",
-        designation: "BACKEND DEVELOPER",
+        designation: "DEVELOPER",
         image: "img/team-2.jpeg",
       },
       {
         name: "Aniket",
-        designation: "GRAPHIC DESIGNER",
+        designation: "DIGITAL STRATEGIST",
         image: "img/team-3.jpeg",
       },
       {
         name: "Asif Hussain",
-        designation: "BUSSINESS ANALYST",
+        designation: "OPERATIONS",
         image: "img/team-4.jpeg",
       },
     ],
-  },
-  video: {
-    link: "https://www.youtube.com/watch?v=9No-FiEInLA",
   },
 };

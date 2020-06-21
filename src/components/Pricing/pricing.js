@@ -1,0 +1,149 @@
+import React from "react";
+import _data from "../../data";
+import { Link } from "react-router-dom";
+
+const Pricing = ({ faq }) => (
+  <React.Fragment>
+    <section id="pricing" className="package-section ptb-100 white">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-8">
+            <div className="section-heading text-center mb-5">
+              <h2> {_data.price.title} </h2>
+              <p className="lead"> {_data.price.description} </p>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          {(_data.price.packages || []).map((_package, index) => {
+            return (
+              <div className="col-lg-4 col-md" key={index}>
+                <div
+                  className={
+                    "card text-center single-pricing-pack " +
+                    (_package.isFeatured ? "primary-bg " : "")
+                  }
+                >
+                  <div
+                    className={
+                      "card-header py-5 border-0 pricing-header " +
+                      (_package.isFeatured ? "text-web-primary" : "")
+                    }
+                  >
+                    <div className="h1 text-center mb-0">
+                      <span className="price font-weight-bolder">
+                        {_package.price}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="card-body">
+                    <ul
+                      className={
+                        "list-unstyled text-sm mb-4 pricing-feature-list " +
+                        (_package.isFeatured ? "text-web-primary" : "")
+                      }
+                    >
+                      {(_package.features || []).map((feature) => {
+                        return <li key={feature.value}> {feature.value} </li>;
+                      })}
+                    </ul>
+                    <Link
+                      to="/#"
+                      className={
+                        "btn mb-3 " +
+                        (_package.isFeatured ? "app-store-btn" : "solid-btn")
+                      }
+                      target="_blank"
+                    >
+                      Purchase now
+                    </Link>
+                    <div className="pricing-body">
+                      {_package.priceVariation}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="mt-5 text-center">
+          <p className="mb-2">
+            If you need custom services or Need more ?
+            <Link to="/Contact" className="color-secondary">
+              Contact us
+            </Link>
+          </p>
+        </div>
+        {faq && (
+          <div className="row pt-5">
+            <div className="col-md-6">
+              <div className="single-faq">
+                <h5> How can I pay for this ? </h5>
+                <p>
+                  Intrinsicly implement high standards in strategic theme areas
+                  via inexpensive solutions. Assertively conceptualize
+                  prospective bandwidth whereas client-based imperatives.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="single-faq">
+                <h5> Is it possible to pay yearly ? </h5>
+                <p>
+                  Assertively iterate user friendly innovation without open
+                  -source markets.Monotonectally extend resource sucking
+                  manufactured products without high-payoff
+                  paradigms.Objectively customize ubiquitous information before
+                  economically sound relationships.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="single-faq">
+                <h5> Do you offer discounts on multiple items ? </h5>
+                <p>
+                  Dramatically target focused testing procedures after holistic
+                  ideas.Collaboratively maximize high-payoff ROI and value-added
+                  products.Distinctively deliver cooperative collaboration and
+                  idea-sharing whereas customized
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="single-faq">
+                <h5> Is VAT included in plan prices ? </h5>
+                <p>
+                  Distinctively simplify high-quality initiatives for highly
+                  efficient applications.Monotonectally repurpose integrated
+                  customer service after magnetic e-services.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="single-faq">
+                <h5> Will I pay more for some features ? </h5>
+                <p>
+                  Enthusiastically pontificate resource-leveling supply chains
+                  whereas scalable markets. Authoritatively streamline resource
+                  maximizing methods of empowerment
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="single-faq">
+                <h5>Why are there no limits on the number of messages ?</h5>
+                <p>
+                  Assertively target turnkey ideas for market-driven
+                  portals.Appropriately e-enable world-class intellectual
+                  capital whereas 2.0 mindshare.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  </React.Fragment>
+);
+
+export default Pricing;

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 import Header from "../components/Header/header";
-import HeroSection from "../components/HeroSection/HeroSectionReview";
 import ReviewSection from "../components/Review";
 import FooterSection from "../components/Footer";
 import Contact from "../components/Contact";
+import BannerSection from "../components/HeroSection/BannerSection";
 
 class Theme extends Component {
   render() {
@@ -12,11 +12,11 @@ class Theme extends Component {
       <React.Fragment>
         <Header />
         <div className="main">
-          <HeroSection />
+          <BannerSection />
           <Contact />
           <ReviewSection />
         </div>
-        <FooterSection noSubscription={true} />{" "}
+        <FooterSection noSubscription={true} />
       </React.Fragment>
     );
   }
