@@ -10,10 +10,12 @@ import {
   RequestQuotation,
 } from "../pages";
 import Constants from "../Constants";
+import ScrollToTop from "../utilities/scrollTop";
 
 const Routes = () => (
   <React.Fragment>
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route exact path={Constants.Routes.Home} component={LandingTheme} />
         <Route exact path={Constants.Routes.About} component={AboutUs} />
