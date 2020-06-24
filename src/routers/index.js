@@ -5,9 +5,7 @@ import {
   Review,
   Pricing,
   NotFound,
-  Team,
   AboutUs,
-  SingleTeam,
   Terms,
   RequestQuotation,
 } from "../pages";
@@ -19,12 +17,6 @@ const Routes = () => (
       <Switch>
         <Route exact path={Constants.Routes.Home} component={LandingTheme} />
         <Route exact path={Constants.Routes.About} component={AboutUs} />
-        <Route exact path={Constants.Routes.Team} component={Team} />
-        <Route
-          exact
-          path={Constants.Routes.SingleTeam}
-          component={SingleTeam}
-        />
         <Route exact path={Constants.Routes.Pricing} component={Pricing} />
         <Route
           exact

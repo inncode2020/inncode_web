@@ -3,8 +3,7 @@ import React from "react";
 import {
   Header,
   BannerSection,
-  TeamSection,
-  SubscribeSection,
+  // SubscribeSection,
   FooterSection,
   About,
 } from "../components";
@@ -19,9 +18,8 @@ const AboutUs = () => (
         currentPage="About Us"
       />
       <About />
-      <TeamSection />
     </div>
-    <SubscribeSection />
+    {/* <SubscribeSection /> */}
     <FooterSection />
   </React.Fragment>
 );

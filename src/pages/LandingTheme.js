@@ -2,7 +2,7 @@ import React from "react";
 
 import {
   Header,
-  SubscribeSection,
+  // SubscribeSection,
   FooterSection,
   LandingPage,
   InncodeIntro,
@@ -12,7 +12,6 @@ import {
   Testimonial,
   Screenshots,
   Achievements,
-  TeamMember,
   ContactSection,
   TrustedCompany,
 } from "../components";
@@ -29,11 +28,10 @@ const LandingTheme = () => (
       <Testimonial />
       <Screenshots />
       <Achievements />
-      <TeamMember />
       <ContactSection />
       <TrustedCompany />
     </div>
-    <SubscribeSection />
+    {/* <SubscribeSection /> */}
     <FooterSection />
   </React.Fragment>
 );

@@ -59,14 +59,6 @@ const Header = ({ bgColor }) => (
               <li className="nav-item">
                 <Link
                   className="nav-link page-scroll"
-                  to={Constants.Routes.Team}
-                >
-                  Team
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link page-scroll"
                   to={Constants.Routes.Contact}
                 >
                   Contact Us

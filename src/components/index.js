@@ -1,6 +1,5 @@
 import Header from "./Header/header";
 import BannerSection from "./Banners/BannerSection";
-import TeamSection from "./TeamMember/team";
 import SubscribeSection from "./Subscribe";
 import FooterSection from "./Footer";
 import About from "./AboutUs";
@@ -14,7 +13,6 @@ import FeatureSection from "./Features/Feature";
 import Testimonial from "./Testimonial";
 import Screenshots from "./Screenshots";
 import Achievements from "./Achievements";
-import TeamMember from "./TeamMember";
 import ContactSection from "./Contact";
 import ReviewSection from "./Review";
 
@@ -28,7 +26,6 @@ import Terms from "./Footer/Terms";
 export {
   Header,
   BannerSection,
-  TeamSection,
   SubscribeSection,
   FooterSection,
   About,
@@ -40,7 +37,6 @@ export {
   Testimonial,
   Screenshots,
   Achievements,
-  TeamMember,
   ContactSection,
   Contact,
   ReviewSection,
