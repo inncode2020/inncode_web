@@ -1,10 +1,12 @@
 import React from "react";
 
-import Header from "../components/Header/header";
-import BannerSection from "../components/HeroSection/BannerSection";
-import FaqSection from "../components/Faq/faq";
-import FooterSection from "../components/Footer";
-import Pricing from "../components/Pricing/pricing";
+import {
+  Header,
+  BannerSection,
+  FaqSection,
+  FooterSection,
+  Pricing,
+} from "../components";
 
 const PricingPage = () => {
   return (

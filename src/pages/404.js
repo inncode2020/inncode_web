@@ -1,13 +1,11 @@
 import React from "react";
 
-import Banner404 from "../components/HeroSection/Banner404";
+import { Banner404 } from "../components";
 
 const NotFound = () => (
-  <React.Fragment>
-    <div className="main">
-      <Banner404 />
-    </div>
-  </React.Fragment>
+  <div className="main">
+    <Banner404 />
+  </div>
 );
 
 export default NotFound;

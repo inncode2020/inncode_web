@@ -2,6 +2,7 @@ import React from "react";
 
 import { Link, useHistory } from "react-router-dom";
 import Team from "./Team.json";
+import Constants from "../../Constants";
 
 const TeamMember = () => {
   const history = useHistory();
@@ -58,7 +59,7 @@ const TeamMember = () => {
                     <button
                       onClick={() =>
                         history.push({
-                          pathname: "/singleTeam",
+                          pathname: Constants.Routes.SingleTeam,
                           state: {
                             item,
                           },

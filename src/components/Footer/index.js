@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Constants from "../../Constants";
 
 const Footer = ({ noSubscription }) => (
   <React.Fragment>
@@ -55,16 +56,16 @@ const Footer = ({ noSubscription }) => (
                 <h5 className="mb-3 text-web-primary"> Others Links </h5>
                 <ul className="list-unstyled">
                   <li className="mb-2">
-                    <Link to="/team"> About Us </Link>
+                    <Link to={Constants.Routes.Team}> About Us </Link>
                   </li>
                   <li className="mb-2">
-                    <Link to="/review"> Contact Us </Link>
+                    <Link to={Constants.Routes.Contact}> Contact Us </Link>
                   </li>
                   <li className="mb-2">
-                    <Link to="/pricing"> Pricing </Link>
+                    <Link to={Constants.Routes.Pricing}> Pricing </Link>
                   </li>
                   <li className="mb-2">
-                    <Link to="/Terms"> Terms & Conditions </Link>
+                    <Link to={Constants.Routes.Terms}>Terms & Conditions</Link>
                   </li>
                 </ul>
               </div>
@@ -85,13 +86,15 @@ const Footer = ({ noSubscription }) => (
                   </li>
                   <li className="mb-2 d-flex align-items-center">
                     <span className="ti-email mr-2"> </span>
-                    <a href="mailto:hello.inncodesolutions@gmail.com">
-                      hello.inncodesolutions@gmail.com
+                    <a href="mailto:operations@inncodesolutions.com">
+                      operations@inncodesolutions.com
                     </a>
                   </li>
                   <li className="mb-2 d-flex align-items-center">
                     <span className="ti-world mr-2"> </span>
-                    <Link to="/"> www.inncodesolutions.com </Link>
+                    <Link to={Constants.Routes.Home}>
+                      www.inncodesolutions.com
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -115,7 +118,7 @@ const Footer = ({ noSubscription }) => (
             <div className="col-md-6 col-lg-5">
               <p className="copyright-text pb-0 mb-0">
                 Copyrights© 2020. All rights reserved by
-                <Link to="/"> Inncode </Link>
+                <Link to={Constants.Routes.Home}> Inncode </Link>
               </p>
             </div>
           </div>

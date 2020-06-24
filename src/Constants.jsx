@@ -1,7 +1,15 @@
-export const Constants = {
+const Constants = {
   Routes: {
-    Home: "/",
-    Login: "/login",
-    Profile: "/profile",
+    Home             : "/",
+    About            : "/about",
+    Team             : "/team",
+    SingleTeam       : "/singleTeam",
+    Pricing          : "/pricing",
+    Contact          : "/contact",
+    Terms            : "/terms",
+    RequestQuotation : "/request",
+    All              : "*",
   },
 };
+
+export default Constants;

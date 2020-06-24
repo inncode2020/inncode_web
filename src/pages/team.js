@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Header from "../components/Header/header";
-import HeroSection from "../components/HeroSection/HeroSectionTeam";
+import BannerSection from "../components/Banners/BannerSection";
 import TeamSection from "../components/TeamMember/team";
 import ContactSection from "../components/Contact";
 import TrustedCompany from "../components/TrustedCompany/TrustedCompany";
@@ -14,7 +14,11 @@ class Theme extends Component {
       <React.Fragment>
         <Header />
         <div className="main">
-          <HeroSection />
+          <BannerSection
+            pageName="INNCODERS"
+            previousPage="Home"
+            currentPage="team"
+          />
           <TeamSection />
           <ContactSection />
           <TrustedCompany />

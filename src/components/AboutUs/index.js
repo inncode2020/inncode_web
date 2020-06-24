@@ -1,5 +1,4 @@
 import React from "react";
-import _data from "../../data";
 
 const About = () => (
   <React.Fragment>

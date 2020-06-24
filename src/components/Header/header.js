@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Constants from "../../Constants";
 
 const Header = ({ bgColor }) => (
   <React.Fragment>
@@ -13,7 +14,7 @@ const Header = ({ bgColor }) => (
         }
       >
         <div className="container">
-          <a href="/" className="navbar-brand">
+          <a href={Constants.Routes.Home} className="navbar-brand">
             <img
               src="img/logo-white-1x.png"
               width="120"
@@ -38,24 +39,36 @@ const Header = ({ bgColor }) => (
           >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="nav-link page-scroll" to="/about">
+                <Link
+                  className="nav-link page-scroll"
+                  to={Constants.Routes.About}
+                >
                   About Us
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link page-scroll" to="/pricing">
+                <Link
+                  className="nav-link page-scroll"
+                  to={Constants.Routes.Pricing}
+                >
                   Pricing
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link page-scroll" to="/team">
+                <Link
+                  className="nav-link page-scroll"
+                  to={Constants.Routes.Team}
+                >
                   Team
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link page-scroll" to="/contact">
+                <Link
+                  className="nav-link page-scroll"
+                  to={Constants.Routes.Contact}
+                >
                   Contact Us
                 </Link>
               </li>

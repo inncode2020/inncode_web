@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import configureStore from "./store";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -11,9 +9,7 @@ window.fub.isUserLoggedIn = false;
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Provider store={configureStore()}>
-        <App />
-      </Provider>
+      <App />
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

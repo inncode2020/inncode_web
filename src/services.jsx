@@ -29,7 +29,7 @@ class Service {
       return await Service.api().post(`/postProject`, { ...obj }, null);
     }
     static async ContactSupport(obj) {
-      return await Service.api().post(`/contactSupport`, { obj }, null);
+      return await Service.api().post(`/contactSupport`, { ...obj }, null);
     }
   };
 }

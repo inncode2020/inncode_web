@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import _data from "../../data";
 
 const Testimonial = ({ bgColor }) => (
@@ -62,7 +62,7 @@ const Testimonial = ({ bgColor }) => (
           </div>
           <div className="col-md-5">
             <div className="owl-carousel owl-theme client-testimonial arrow-indicator">
-              {(_data.comments || []).map((comment, _index) => {
+              {(_data.testimonial.comments || []).map((comment, _index) => {
                 return (
                   <div className="item" key={comment.name}>
                     <div className="testimonial-quote-wrap">

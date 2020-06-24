@@ -12,7 +12,7 @@
 02. BASE TYPOGRAPHY
 03. PRE DEFINE CLASS CSS
 04. HEADER CSS
-05. HERO SECTION CSS
+05. inncode SECTION CSS
 06. PROMO SECTION CSS
 07. ABOUT US CSS
 08. FEATURE SECTION CSS
@@ -761,27 +761,27 @@ select.form-control.has-value {
 }
 
 /*=========================================
-            05. HERO SECTION CSS
+            05. inncode SECTION CSS
 ============================================*/
 
-.hero-animation-img,
-.hero-content-left {
+.inncode-animation-img,
+.inncode-content-left {
   position: relative;
   z-index: 2;
 }
 
-.hero-content-left h1 {
+.inncode-content-left h1 {
   font-weight: 500;
   font-size: 42px;
   line-height: 60px;
 }
 
-.hero-content-left h1 span {
+.inncode-content-left h1 span {
   font-weight: 700;
 }
 
 @media (min-width: 992px) {
-  .hero-animation-img {
+  .inncode-animation-img {
     position: relative;
     display: block;
     width: 100%;
@@ -931,7 +931,7 @@ select.form-control.has-value {
   }
 }
 
-.hero-content-left,
+.inncode-content-left,
 .sign-up-form-wrap {
   z-index: 2;
 }
@@ -967,14 +967,14 @@ select.form-control.has-value {
   width: 100%;
 }
 
-.hero-7 {
+.inncode-7 {
   width: 100%;
   position: relative;
 }
 
-.hero-7:after {
+.inncode-7:after {
   content: " ";
-  background-image: url("../../img/hero-bg-2.jpg");
+  background-image: url("../../img/inncode-bg-2.jpg");
   background-size: cover;
   background-position: center center;
   position: absolute;
@@ -987,7 +987,7 @@ select.form-control.has-value {
   z-index: -1;
 }
 
-.hero-7:before {
+.inncode-7:before {
   position: absolute;
   content: "";
   background: rgba(0, 67, 139, 0.85);
@@ -1000,7 +1000,7 @@ select.form-control.has-value {
   bottom: -50px;
 }
 
-/*hero subscribe form*/
+/*inncode subscribe form*/
 
 .subscribe-form {
   position: relative;
@@ -1460,22 +1460,22 @@ select.form-control.has-value {
   animation-iteration-count: infinite;
 }
 
-/*hero 2 css*/
+/*inncode 2 css*/
 
-.hero-section-2,
-.hero-section-3 {
+.banner-section-2,
+.banner-section-3 {
   position: relative;
   overflow: hidden;
 }
 
-.hero-section-2:before {
+.banner-section-2:before {
   content: "";
   position: absolute;
   z-index: -1;
   width: 100%;
   height: 175%;
   bottom: 0;
-  background-image: url("../../img/hero-bg-shape-3.svg");
+  background-image: url("../../img/inncode-bg-shape-3.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1498,7 +1498,7 @@ select.form-control.has-value {
   }
 }
 
-/*hero background video css*/
+/*inncode background video css*/
 
 .video-section-wrap {
   position: relative;

@@ -1,9 +1,9 @@
 module.exports = {
-  hero: {
+  inncode: {
     title: "Brainstorming for desired perfect Usability",
     description:
       "Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!",
-    bgImage: "img/app-hero-bg.jpg",
+    bgImage: "img/app-inncode-bg.jpg",
   },
   promo: {
     title: "Affordable Web Design for Small Business?",
@@ -146,7 +146,7 @@ module.exports = {
       {
         name: "Aman Pandey",
         company: "Fill Ur Basket",
-        image: "img/ClientReal -1.jpg",
+        image: "img/Client-1.jpg",
         comment:
           "The team at Inncode Solutions is simply the best. What makes Inncoders so great is their attention to detail,  availability and most importantly, their knowledge and expertise to deliver on time and according to requirements.",
       },

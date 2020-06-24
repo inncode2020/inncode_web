@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { subscribe } from "../../actions/index";
-import _data from "../../data";
 
 const Subscribe = () => {
   const [state, setState] = useState({

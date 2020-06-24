@@ -1,25 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 
-import Header from "../components/Header/header";
-import ReviewSection from "../components/Review";
-import FooterSection from "../components/Footer";
-import Contact from "../components/Contact";
-import BannerSection from "../components/HeroSection/BannerSection";
+import {
+  Header,
+  ReviewSection,
+  FooterSection,
+  Contact,
+  BannerSection,
+} from "../components";
 
-class Theme extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Header />
-        <div className="main">
-          <BannerSection />
-          <Contact />
-          <ReviewSection />
-        </div>
-        <FooterSection noSubscription={true} />
-      </React.Fragment>
-    );
-  }
-}
+const ContactUs = () => (
+  <React.Fragment>
+    <Header />
+    <div className="main">
+      <BannerSection
+        pageName="Reach Us"
+        previousPage="Home"
+        currentPage="contact"
+      />
+      <Contact />
+      <ReviewSection />
+    </div>
+    <FooterSection noSubscription={true} />
+  </React.Fragment>
+);
 
-export default Theme;
+export default ContactUs;
