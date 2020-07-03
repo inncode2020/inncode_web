@@ -152,8 +152,9 @@ const Faq = () => (
                     <p>
                       Absolutely, we build your websites on development servers
                       and during the development phase feel free to reach us
-                      with the feedback{" "}
+                      with the feedback
                       <span role="img" aria-label="image">
+                        {" "}
                         🙏
                       </span>
                     </p>
