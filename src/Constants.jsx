@@ -5,7 +5,7 @@ const Constants = {
     Pricing          : "/pricing",
     Contact          : "/contact",
     Terms            : "/terms",
-    RequestQuotation : "/request",
+    // RequestQuotation : "/request",
     All              : "*",
   },
 };
